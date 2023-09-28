@@ -10,7 +10,7 @@ public class BookingTiketBioskop {
         double ppn, hrg_stlh_ppn;
         String jdl_film;
 
-        ppn=0.1;
+        ppn = 0.1;
         System.out.println("Pilih film yang akan anda tonton");
         System.out.println("The Nun II");
         System.out.println("Kisah Tanah Jawa: Pocong Gundul");
