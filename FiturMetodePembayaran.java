@@ -7,23 +7,40 @@ public class FiturMetodePembayaran {
         Scanner input = new Scanner(System.in);
 
         int lokasi_pembayaran, metode_pembayaran, bayar;
-        System.out.println("==========================");
-        System.out.println("Dimana anda ingin membayar \na.Bayar di sini \nb.Bayar di kasir");
-        System.out.println("==========================");        
+        System.out.println("|============================|");
+        System.out.println("| Dimana anda ingin membayar |");
+        System.out.println("|============================|");
+        System.out.println("| a.Bayar di sini            |");      
+        System.out.println("| b.Bayar di kasir           |");
+        System.out.println("|============================|");
+        System.out.print("Pilih a/b untuk melanjutkan : ");
+  
         lokasi_pembayaran = input.next().charAt(0);
 
         if (lokasi_pembayaran == 'a') 
         {
-            System.out.println("==========================");
-            System.out.println("Pilih Metode Pembayaran \na.E-Wallet \nb.Debit \nc.QRIS \nd.Kembali Bayar di Kasir");
-            System.out.println("==========================");
+            System.out.println("|==========================|");
+            System.out.println("| Pilih Metode Pembayaran  |");
+            System.out.println("|==========================|");
+            System.out.println("| a.E-Wallet               |");
+            System.out.println("| b.Debit                  |");
+            System.out.println("| c.QRIS                   |");
+            System.out.println("| d.Kembali Bayar di Kasir |");
+            System.out.println("|==========================|");
+	        System.out.println("Pilih a/b/c/d untuk melanjutkan");
             metode_pembayaran = input.next().charAt(0);
 
             if (metode_pembayaran == 'a')
             {
-                System.out.println("\n\nSelesaikan Transaksi Anda!");
-                System.out.println("\n========================\n");
-                System.out.println("Apakah Transaksi Anda Sukses? \na.Ya \nb.Tidak");
+                System.out.println("...");
+                System.out.println("Selesaikan Transaksi Anda!");
+                System.out.println("...");
+                System.out.println("|===============================|");
+                System.out.println("| Apakah Transaksi Anda Sukses? |");
+                System.out.println("|===============================|");
+                System.out.println("| a.Ya                          |");
+                System.out.println("| b.Tidak                       |");
+                System.out.println("|===============================|");
                 bayar = input.next().charAt(0);
                 if (bayar == 'a')
                 {
@@ -40,9 +57,15 @@ public class FiturMetodePembayaran {
             }
             else if (metode_pembayaran == 'b') 
             {
-                System.out.println("\n\nSelesaikan Transaksi Anda!");
-                System.out.println("\n========================\n");
-                System.out.println("Apakah Transaksi Anda Sukses? \na.Ya \nb.Tidak");
+                System.out.println("...");
+                System.out.println("Selesaikan Transaksi Anda!");
+                System.out.println("...");
+                System.out.println("|===============================|");
+                System.out.println("| Apakah Transaksi Anda Sukses? |");
+                System.out.println("|===============================|");
+                System.out.println("| a.Ya                          |");
+                System.out.println("| b.Tidak                       |");
+                System.out.println("|===============================|");
                 bayar = input.next().charAt(0);
                 if (bayar == 'a')
                 {
@@ -59,9 +82,15 @@ public class FiturMetodePembayaran {
             }
             else if (metode_pembayaran == 'c') 
             {
-                System.out.println("\n\nSelesaikan Transaksi Anda!");
-                System.out.println("\n========================\n");
-                System.out.println("Apakah Transaksi Anda Sukses? \na.Ya \nb.Tidak");
+                System.out.println("...");
+                System.out.println("Selesaikan Transaksi Anda!");
+                System.out.println("...");
+                System.out.println("|===============================|");
+                System.out.println("| Apakah Transaksi Anda Sukses? |");
+                System.out.println("|===============================|");
+                System.out.println("| a.Ya                          |");
+                System.out.println("| b.Tidak                       |");
+                System.out.println("|===============================|");
                 bayar = input.next().charAt(0);
                 if (bayar == 'a')
                 {

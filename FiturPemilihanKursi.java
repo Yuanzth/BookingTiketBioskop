@@ -170,6 +170,7 @@ public class FiturPemilihanKursi {
                 System.out.println("===========================");
             
             }
+            break;
         }
 
     }  
