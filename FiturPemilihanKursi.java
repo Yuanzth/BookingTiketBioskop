@@ -174,6 +174,7 @@ public class FiturPemilihanKursi {
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
             }
+            break;
         }
 
     }  
