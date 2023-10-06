@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class FiturPemilihanKursi {
+
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
@@ -92,7 +93,7 @@ public class FiturPemilihanKursi {
             System.out.println("|=====================|");
             System.out.println("|1                    |");
             System.out.println("|2                    |");
-            System.out.println("|=====================|");
+            System.out.println("|================== ===|");
             nomor_bangku = input.nextInt();
             if (nomor_bangku == 1)
             {
