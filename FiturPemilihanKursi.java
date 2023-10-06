@@ -15,7 +15,7 @@ public class FiturPemilihanKursi {
         System.out.println("|Baris e                                    |");
         System.out.println("|===========================================|");
 
-        System.out.println("Masukkan Nomor Baris ");
+        System.out.println("Masukkan Baris yang anda inginkan");
         baris = input.next().charAt(0);
 
         switch (baris){
@@ -30,16 +30,18 @@ public class FiturPemilihanKursi {
             if (nomor_bangku == 1)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
             else if (nomor_bangku == 2)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
@@ -62,16 +64,18 @@ public class FiturPemilihanKursi {
             if (nomor_bangku == 1)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
             else if (nomor_bangku == 2)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
@@ -93,16 +97,18 @@ public class FiturPemilihanKursi {
             if (nomor_bangku == 1)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
             else if (nomor_bangku == 2)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
@@ -124,16 +130,18 @@ public class FiturPemilihanKursi {
             if (nomor_bangku == 1)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
             else if (nomor_bangku == 2)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
@@ -155,16 +163,18 @@ public class FiturPemilihanKursi {
             if (nomor_bangku == 1)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
             else if (nomor_bangku == 2)
             {
                 System.out.println("|===============================================|");
-                System.out.println(  "|Nomor Baris yang anda pilih adalah " +baris+"           |");                
+                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
                 System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
+                System.out.println("|===============================================|");
                 System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
                 System.out.println("|===============================================|");
             }
