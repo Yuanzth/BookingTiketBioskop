@@ -119,7 +119,6 @@ public class FiturMetodePembayaran {
         {
             System.out.println("Selesaikan Transaksi di kasir");
         }
-        
         else 
         {
             System.out.println("Anda Salah Memasukan input");
