@@ -6,6 +6,7 @@ public class FiturPemilihanKursi {
         Scanner input = new Scanner(System.in);
 
         char baris;
+        char cekKursi;
         int nomor_bangku;
 
         cekKursi = 'A';
