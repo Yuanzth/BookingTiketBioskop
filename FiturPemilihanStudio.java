@@ -4,10 +4,18 @@ public class FiturPemilihanStudio {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        char tipe_studio;
+        char tipe_studio, cekStudio;
         int hrg_std;
         String nama_studio;
 
+        cekStudio = 'A';
+
+        do 
+        {
+            cekStudio = 'A';
+        do 
+        {
+            cekStudio = 'A';
         System.out.println("|=============================================================|");
         System.out.println("|    Hello Film Addict! Selamat datang di POLINEMA Studio.    |");
         System.out.println("|=============================================================|");
@@ -22,6 +30,7 @@ public class FiturPemilihanStudio {
 
         tipe_studio = input.next().charAt(0);
 
+             
         if (tipe_studio == 'A') { 
             nama_studio = "Deluxe";
             hrg_std = +30000;
@@ -59,8 +68,23 @@ public class FiturPemilihanStudio {
         else {
             System.out.println("|================================================================|");
             System.out.println("|      Mohon maaf, Studio yang anda masukkan tidak tersedia      |");
+            System.out.println("|              Silahkan ulangi pilihan studio anda               |");
             System.out.println("|================================================================|");
-        } 
-        
+            cekStudio = 'E';
         }
+
+        } 
+        while (cekStudio == 'E');
+        
+
+        System.out.println("|================================================================|");
+        System.out.println("|          Apakah Anda ingin melanjutkan memilih kursi :         |");
+        System.out.println("|================================================================|");
+        System.out.println("| A. Iya, saya ingin melanjutkan memilih kursi                   |");
+        System.out.println("| B. Tidak, Saya ingin mengganti studio yang saya pilih          |");
+        System.out.println("|================================================================|");
+        cekStudio = input.next().charAt(0);
+        }
+        while (cekStudio == 'B');
+    }
 }
