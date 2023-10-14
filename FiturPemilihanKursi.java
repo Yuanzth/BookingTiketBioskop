@@ -4,7 +4,8 @@ public class FiturPemilihanKursi {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        char baris, cekKursi;
+
+        char baris;
         int nomor_bangku;
 
         cekKursi = 'A';
@@ -156,7 +157,11 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
             }
             break;
+
             case 'e':
+
+            do {
+            cekKursi = 'B';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -187,7 +192,12 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
+                cekKursi = 'A';
+                
             }
+            } 
+            
+            while (cekKursi == 'A');
             break;
         }      
                System.out.println("|Apakah anda ingin melanjutkan pembayaran?      |");
