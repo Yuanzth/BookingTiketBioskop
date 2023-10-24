@@ -5,8 +5,8 @@ public class FiturPemilihanStudio {
         Scanner input = new Scanner(System.in);
 
         char tipe_studio, cekStudio;
-        int hrg_std;
-        String nama_studio;
+        int[]hrg_std = {30000, 40000, 50000, 60000};
+        String[]nama_studio = {"Deluxe","Dolby Atmos", "IMAX", "The Premiere"};
 
         cekStudio = 'A';
 
@@ -32,36 +32,32 @@ public class FiturPemilihanStudio {
 
              
         if (tipe_studio == 'A') { 
-            nama_studio = "Deluxe";
-            hrg_std = +30000;
+
             System.out.println("===============================================================");
-            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio+"\nDengan harga\t\t\t :" +hrg_std);
+            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio[0] +"\nDengan harga\t\t\t :" +hrg_std[0]);
             System.out.println("===============================================================");
             System.out.println("           Silahkan melanjutkan untuk memilih kursi            ");
             System.out.println("===============================================================");
 
         }
         else if (tipe_studio == 'B') {
-            nama_studio = "Dolby Atmos";
-            hrg_std = +40000;
+           
             System.out.println("===============================================================");
-            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio+"\nDengan harga\t\t\t :" +hrg_std);
+            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio[1]+"\nDengan harga\t\t\t :" +hrg_std[1]);
             System.out.println("Silahkan melanjutkan untuk memilih kursi");
             System.out.println("===============================================================");
         }
         else if (tipe_studio == 'C') {
-            nama_studio = "IMAX";
-            hrg_std = +50000;
+            
             System.out.println("===============================================================");
-            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio+"\nDengan harga\t\t\t :" +hrg_std);
+            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio[2]+"\nDengan harga\t\t\t :" +hrg_std[2]);
             System.out.println("Silahkan melanjutkan untuk memilih kursi");
             System.out.println("===============================================================");
         }
         else if (tipe_studio == 'D') {
-            nama_studio = "The Premiere";
-            hrg_std = +60000;
+           
             System.out.println("===============================================================");
-            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio+"\nDengan harga\t\t\t :" +hrg_std);
+            System.out.println("Studio yang anda pilih adalah\t : " + nama_studio[3]+"\nDengan harga\t\t\t :" +hrg_std[3]);
             System.out.println("Silahkan melanjutkan untuk memilih kursi");
             System.out.println("===============================================================");
         }
