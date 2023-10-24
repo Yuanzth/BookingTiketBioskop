@@ -114,7 +114,6 @@ public class FiturMetodePembayaran {
                 System.out.println("Anda Salah Memasukan input");
             }
         }
-
         else if (lokasi_pembayaran == 'b')
         {
             System.out.println("Selesaikan Transaksi di kasir");
