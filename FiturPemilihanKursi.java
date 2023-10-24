@@ -6,12 +6,13 @@ public class FiturPemilihanKursi {
         Scanner input = new Scanner(System.in);
 
         char baris;
-        char cekKursi;
+        char cekKursi; 
         int nomor_bangku;
 
         cekKursi = 'A';
         do 
         {
+        cekKursi = 'A';
         System.out.println("|===========================================|");
         System.out.println("|Terdapat Beberapa Nomor Baris yang Tersedia|");
         System.out.println("|Baris a                                    |");
@@ -24,8 +25,12 @@ public class FiturPemilihanKursi {
         System.out.println("Masukkan Baris yang anda inginkan");
         baris = input.next().charAt(0);
 
-        switch (baris){
+        switch (baris)
+        {
             case 'a':
+            do 
+            {
+            cekKursi = 'A';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -56,10 +61,16 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
+                cekKursi = 'E';
             }
+            }
+            while (cekKursi == 'E');
             break;
 
             case 'b':
+            do
+            {
+            cekKursi = 'A';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -90,9 +101,16 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
+                cekKursi = 'E';
             }
+            }
+            while (cekKursi == 'E');
             break;
+
             case 'c':
+            do
+            {
+                cekKursi = 'A';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -123,9 +141,16 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
+                cekKursi = 'E';
             }
+            }
+            while (cekKursi == 'E');
             break;
+
             case 'd':
+            do
+            { 
+                cekKursi = 'A';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -156,13 +181,16 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
+                cekKursi = 'E';
             }
+            }
+            
+            while (cekKursi == 'E');
             break;
-
             case 'e':
-
-            do {
-            cekKursi = 'B';
+            do 
+            {
+            cekKursi = 'A';
             System.out.println("|=====================|");
             System.out.println("|Masukkan Nomor Bangku|");
             System.out.println("|=====================|");
@@ -193,12 +221,11 @@ public class FiturPemilihanKursi {
                 System.out.println("|===========================|");
                 System.out.println("|Nomor Bangku Tidak Tersedia|");
                 System.out.println("|===========================|");
-                cekKursi = 'A';
+                cekKursi = 'E';
                 
             }
             } 
-            
-            while (cekKursi == 'A');
+            while (cekKursi == 'E');
             break;
         }      
                System.out.println("|Apakah anda ingin melanjutkan pembayaran?      |");
@@ -208,7 +235,6 @@ public class FiturPemilihanKursi {
                System.out.println("|B. Tidak, harap ulangi pemilihan kursi anda    |");
                System.out.println("|===============================================|");
                cekKursi = input.next().charAt(0);
-
         }
         while (cekKursi == 'B');
     }
