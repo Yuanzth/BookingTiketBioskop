@@ -4,38 +4,24 @@ public class BookingTiketBioskop {
 
     public static void main(String[] args) {
         
-        Scanner input =new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        int hrg_std, jml_tiket, hrg_sblm_ppn;
-        double ppn, hrg_stlh_ppn;
         String[] jdl_film = {"The Nun II", "Kisah Tanah Jawa: Pocong Gundul", "The Sacred Riana 2: Bloody Mary", "No Hard Feelings", "His Only Son", "Gran Turismo"};
-        String inputjdl;
 
-        ppn = 0.1;
-        System.out.println("Pilih film yang akan anda tonton");
-        System.out.println(jdl_film[0]);
-        System.out.println(jdl_film[1]);
-        System.out.println(jdl_film[2]);
-        System.out.println(jdl_film[3]);
-        System.out.println(jdl_film[4]);
-        System.out.println(jdl_film[5]);
+        System.out.println("Pilih film yang akan anda tonton:");
+        
+        for (int i = 0; i < jdl_film.length; i++) {
+            System.out.println((i + 1) + ". " + jdl_film[i]);
+        }
 
-        System.out.println("Masukan judul film : ");        
-        inputjdl = input.nextLine();
+        System.out.print("Masukkan nomor film yang ingin Anda tonton: ");
+        int jdlinput = input.nextInt();
 
-        System.out.println("Masukan harga tiket studio");
-        hrg_std = input.nextInt();
-
-        System.out.println("masukan jumlah tiket yang anda pesan");
-        jml_tiket = input.nextInt();
-
-        hrg_sblm_ppn= hrg_std*jml_tiket;
-        hrg_stlh_ppn= hrg_sblm_ppn+hrg_sblm_ppn*ppn;
-
-        System.out.println("Harga Sebelum PPN = " +hrg_sblm_ppn);
-        System.out.println("Film Anda = " +inputjdl);
-        System.out.println("Total Transaksi Anda = " +hrg_stlh_ppn);
-
+        if (jdlinput >= 0 && jdlinput < jdl_film.length) {
+            String selectedFilm = jdl_film[jdlinput - 1];
+            System.out.println("Film Anda = " + selectedFilm);
+        } else {
+            System.out.println("Nomor film yang Anda masukkan tidak valid.");
+        }
     }
-
 }
