@@ -1,243 +1,53 @@
 import java.util.Scanner;
 
 public class FiturPemilihanKursi {
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        char baris;
-        char cekKursi; 
-        int nomor_bangku;
-
-        cekKursi = 'A';
-        do 
-        {
-        cekKursi = 'A';
-        System.out.println("|===========================================|");
-        System.out.println("|Terdapat Beberapa Nomor Baris yang Tersedia|");
-        System.out.println("|Baris a                                    |");
-        System.out.println("|Baris b                                    |");
-        System.out.println("|Baris c                                    |");
-        System.out.println("|Baris d                                    |");
-        System.out.println("|Baris e                                    |");
-        System.out.println("|===========================================|");
-
-        System.out.println("Masukkan Baris yang anda inginkan");
-        baris = input.next().charAt(0);
-
-        switch (baris)
-        {
-            case 'a':
-            do 
-            {
-            cekKursi = 'A';
-            System.out.println("|=====================|");
-            System.out.println("|Masukkan Nomor Bangku|");
-            System.out.println("|=====================|");
-            System.out.println("|1                    |");
-            System.out.println("|2                    |");
-            System.out.println("|=====================|");
-            nomor_bangku = input.nextInt();
-            if (nomor_bangku == 1)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
+        char[][] kursi = new char[5][5]; // Studio dengan 5 baris dan 5 kolom
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                kursi[i][j] = '0'; // Semua kursi awalnya kosong ('0')
             }
-            else if (nomor_bangku == 2)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else
-            {
-                System.out.println("|===========================|");
-                System.out.println("|Nomor Bangku Tidak Tersedia|");
-                System.out.println("|===========================|");
-                cekKursi = 'E';
-            }
-            }
-            while (cekKursi == 'E');
-            break;
-
-            case 'b':
-            do
-            {
-            cekKursi = 'A';
-            System.out.println("|=====================|");
-            System.out.println("|Masukkan Nomor Bangku|");
-            System.out.println("|=====================|");
-            System.out.println("|1                    |");
-            System.out.println("|2                    |");
-            System.out.println("|=====================|");
-            nomor_bangku = input.nextInt();
-            if (nomor_bangku == 1)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else if (nomor_bangku == 2)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else 
-            {
-                System.out.println("|===========================|");
-                System.out.println("|Nomor Bangku Tidak Tersedia|");
-                System.out.println("|===========================|");
-                cekKursi = 'E';
-            }
-            }
-            while (cekKursi == 'E');
-            break;
-
-            case 'c':
-            do
-            {
-                cekKursi = 'A';
-            System.out.println("|=====================|");
-            System.out.println("|Masukkan Nomor Bangku|");
-            System.out.println("|=====================|");
-            System.out.println("|1                    |");
-            System.out.println("|2                    |");
-            System.out.println("|================== ===|");
-            nomor_bangku = input.nextInt();
-            if (nomor_bangku == 1)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else if (nomor_bangku == 2)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else 
-            {
-                System.out.println("|===========================|");
-                System.out.println("|Nomor Bangku Tidak Tersedia|");
-                System.out.println("|===========================|");
-                cekKursi = 'E';
-            }
-            }
-            while (cekKursi == 'E');
-            break;
-
-            case 'd':
-            do
-            { 
-                cekKursi = 'A';
-            System.out.println("|=====================|");
-            System.out.println("|Masukkan Nomor Bangku|");
-            System.out.println("|=====================|");
-            System.out.println("|1                    |");
-            System.out.println("|2                    |");
-            System.out.println("|=====================|");
-            nomor_bangku = input.nextInt();
-            if (nomor_bangku == 1)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else if (nomor_bangku == 2)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else 
-            {
-                System.out.println("|===========================|");
-                System.out.println("|Nomor Bangku Tidak Tersedia|");
-                System.out.println("|===========================|");
-                cekKursi = 'E';
-            }
-            }
-            
-            while (cekKursi == 'E');
-            break;
-            case 'e':
-            do 
-            {
-            cekKursi = 'A';
-            System.out.println("|=====================|");
-            System.out.println("|Masukkan Nomor Bangku|");
-            System.out.println("|=====================|");
-            System.out.println("|1                    |");
-            System.out.println("|2                    |");
-            System.out.println("|=====================|");
-            nomor_bangku = input.nextInt();
-            if (nomor_bangku == 1)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else if (nomor_bangku == 2)
-            {
-                System.out.println("|===============================================|");
-                System.out.println(  "|Baris yang anda pilih adalah " +baris+"                 |");                
-                System.out.println("|Dan Nomor Bangku yang anda pilih adalah " +nomor_bangku+"      |");
-                System.out.println("|===============================================|");
-                System.out.println("|Silahkan Lanjutkan Pembayaran                  |");
-                System.out.println("|===============================================|");
-            }
-            else
-            {
-                System.out.println("|===========================|");
-                System.out.println("|Nomor Bangku Tidak Tersedia|");
-                System.out.println("|===========================|");
-                cekKursi = 'E';
-                
-            }
-            } 
-            while (cekKursi == 'E');
-            break;
-        }      
-               System.out.println("|Apakah anda ingin melanjutkan pembayaran?      |");
-               System.out.println("|===============================================|");
-               System.out.println("|A. Iya, lanjutkan pembayaran                   |"); 
-               System.out.println("|===============================================|");
-               System.out.println("|B. Tidak, harap ulangi pemilihan kursi anda    |");
-               System.out.println("|===============================================|");
-               cekKursi = input.next().charAt(0);
         }
-        while (cekKursi == 'B');
+
+        boolean lanjutPilihKursi = true;
+        while (lanjutPilihKursi) {
+            System.out.println("Status Kursi (X: Terisi, O: Kosong):");
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 5; j++) {
+                    System.out.print(" | " + kursi[i][j] + " | ");
+                }
+                System.out.println();
+            }
+            System.out.print("Pilih baris (1-5) dan kolom (1-5) kursi atau ketik '0 dan 0' untuk selesai: ");
+            int baris = input.nextInt();
+            int kolom = input.nextInt();
+
+            if (baris == 0 || kolom == 0) {
+                lanjutPilihKursi = false;
+                System.out.println("Pemilihan kursi dibatalkan.");
+            } else if (baris >= 1 && baris <= 5 && kolom >= 1 && kolom <= 5) {
+                if (kursi[baris - 1][kolom - 1] == '0') {
+                    kursi[baris - 1][kolom - 1] = 'X'; // Menandai kursi sebagai terisi ('X')
+                    System.out.println("Anda telah memilih kursi Baris " + baris + ", Kolom " + kolom);
+                } else {
+                    System.out.println("Kursi sudah terisi. Silakan pilih kursi lain.");
+                }
+            } else {
+                System.out.println("Nomor baris atau kolom tidak valid.");
+            }
+        }
+        System.out.println("Pilihan kursi Anda:");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (kursi[i][j] == 'X') {
+                    System.out.println("Baris " + (i + 1) + ", Kolom " + (j + 1));
+                }
+            }
+        }
+        
+        System.out.println("Terima kasih telah memilih kursi! Selamat menonton film.");
+            
     }
- }
-    
-          
+}
