@@ -32,7 +32,7 @@ public class FiturPemilihanKursi {
                     kursi[baris - 1][kolom - 1] = 'X'; // Menandai kursi sebagai terisi ('X')
                     System.out.println("Anda telah memilih kursi Baris " + baris + ", Kolom " + kolom);
                 } else {
-                    System.out.println("Kursi sudah terisi. Silakan pilih kursi lain.");
+                    System.out.println("Kursi sudah terisi. Silakan pilih kursi yang lain.");
                 }
             } else {
                 System.out.println("Nomor baris atau kolom tidak valid.");
@@ -47,7 +47,6 @@ public class FiturPemilihanKursi {
             }
         }
         
-        System.out.println("Terima kasih telah memilih kursi! Selamat menonton film.");
-            
+        System.out.println("Terima kasih telah memilih kursi! Selamat menonton film.");           
     }
 }
