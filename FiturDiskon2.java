@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FiturDiskon {
+public class FiturDiskon2 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -8,6 +8,7 @@ public class FiturDiskon {
         String[] jdl_film = {"The Nun II", "Kisah Tanah Jawa: Pocong Gundul", "The Sacred Riana 2: Bloody Mary", "No Hard Feelings", "His Only Son", "Gran Turismo"};
         int[] hrg_std = {30000, 40000, 50000, 60000};
         String[] nama_studio = {"Deluxe", "Dolby Atmos", "IMAX", "The Premiere"};
+        double[][] diskon_film = new double[jdl_film.length][nama_studio.length];
 
         System.out.println("Pilih film yang akan anda tonton:");
 
@@ -24,6 +25,7 @@ public class FiturDiskon {
 
             char tipe_studio, cekStudio;
             double totalHarga = 0;
+            int studioIndex = -1; // Initialize studioIndex
 
             do {
                 cekStudio = 'A';
@@ -43,7 +45,7 @@ public class FiturDiskon {
                     tipe_studio = input.next().charAt(0);
 
                     if (tipe_studio >= 'A' && tipe_studio <= 'D') {
-                        int studioIndex = tipe_studio - 'A';
+                        studioIndex = tipe_studio - 'A'; // Update studioIndex
                         System.out.println("===============================================================");
                         System.out.println("Studio yang anda pilih adalah\t : " + nama_studio[studioIndex] + "\nDengan harga\t\t\t :" + hrg_std[studioIndex]);
                         System.out.println("===============================================================");
@@ -70,15 +72,23 @@ public class FiturDiskon {
             } while (cekStudio == 'B');
 
             System.out.print("Apakah Anda memiliki diskon? (Y/N): ");
-            char haveDiscount = input.next().charAt(0);
+            char adaDiskon = input.next().charAt(0);
             double diskon = 0;
 
-            if (haveDiscount == 'Y' || haveDiscount == 'y') {
-                System.out.print("Masukkan persentase diskon: ");
+            if (adaDiskon == 'Y' || adaDiskon == 'y') 
+            {
+                System.out.println("Masukkan persentase diskon (5/10/15/20): ");
                 diskon = input.nextDouble();
-                totalHarga *= (1 - diskon / 100);
+                if (diskon != 5 || diskon != 10 || diskon != 15 || diskon != 20)
+                {
+                    System.out.println("Diskon yang anda masukkan tidak berlaku.");
+                    return;
+                }
+                
             }
-            
+
+            int filmIndex = jdlinput - 1;
+            totalHarga *= (1 - diskon / 100 + diskon_film[filmIndex][studioIndex] / 100);
 
             System.out.println("|================================================================|");
             System.out.println("Total Harga: " + totalHarga);
