@@ -102,7 +102,7 @@ public class FileUntukPrakDaspro {
                         System.out.println("Pilih film dan studio terlebih dahulu.");
                         break;
                     }
-                    char[][] kursi = new char[5][5]; // Misalnya, studio dengan 5 baris dan 5 kolom
+                    char[][] kursi = new char[5][5]; // Misalnya ada studio dengan 5 baris dan 5 kolom
                     for (int i = 0; i < 5; i++) {
                         for (int j = 0; j < 5; j++) {
                             kursi[i][j] = '0';
@@ -160,13 +160,13 @@ public class FileUntukPrakDaspro {
                 case 5:
                     // Pelaporan Harian
                     System.out.println("Pelaporan Harian:");
-                    // Implementasikan pelaporan harian sesuai kebutuhan Anda
+                    // Coming Soon
                     break;
 
                 case 6:
                     // Pelaporan Bulanan
                     System.out.println("Pelaporan Bulanan:");
-                    // Implementasikan pelaporan bulanan sesuai kebutuhan Anda
+                    // Coming Soon
                     break;
 
                 case 7:
