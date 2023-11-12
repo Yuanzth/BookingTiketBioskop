@@ -93,7 +93,8 @@ public class FiturDiskon2 {
             System.out.println("|================================================================|");
             System.out.println("Total Harga: " + totalHarga);
             System.out.println("|================================================================|");
-        } else {
+        } else 
+        {
             System.out.println("Nomor film yang Anda masukkan tidak valid.");
         }
     }
