@@ -48,8 +48,8 @@ public class FileUntukPrakDaspro {
 
         // Data booking
         String[][] booking = new String[jdl_film.length][nama_studio.length];
-
-        while (true) {
+        boolean loopSemesta = true;
+        while (loopSemesta) {
             System.out.println("Menu:");
             System.out.println("1. Pilih Film");
             System.out.println("2. Pilih Studio");
@@ -193,7 +193,7 @@ public class FileUntukPrakDaspro {
 
                 case 9:
                     System.out.println("Terima kasih telah menggunakan sistem booking tiket bioskop.");
-                    System.exit(0);
+                    loopSemesta = false;
                     break;
 
                 default:
