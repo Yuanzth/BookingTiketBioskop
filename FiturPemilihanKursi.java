@@ -46,7 +46,6 @@ public class FiturPemilihanKursi {
                 }
             }
         }
-        
         System.out.println("Terima kasih telah memilih kursi! Selamat menonton film.");
             
     }
