@@ -35,6 +35,7 @@ public class FileUntukPrakDaspro {
 
         int jdlinput = -1; // Inisialisasi dengan nilai default yang tidak valid
         int studioInput = -1; // Inisialisasi dengan nilai default yang tidak valid
+        int totalHarga = 0; // Inisialisasi variabel totalHarga
 
         // Data master ketersediaan film
         String[] jdl_film = {"The Nun II", "Kisah Tanah Jawa: Pocong Gundul", "The Sacred Riana 2: Bloody Mary", "No Hard Feelings", "His Only Son", "Gran Turismo"};
@@ -144,7 +145,7 @@ public class FileUntukPrakDaspro {
                     System.out.println("Film yang Anda pesan: " + jdl_film[jdlinput]);
                     System.out.println("Studio yang Anda pilih: " + nama_studio[studioInput]);
                     System.out.println("Kursi yang Anda pilih: " + booking[jdlinput][studioInput]);
-                    int totalHarga = harga_film[jdlinput] + harga_studio[studioInput];
+                    totalHarga = harga_film[jdlinput] + harga_studio[studioInput];
                     System.out.println("Harga: " + totalHarga);
                     System.out.print("Masukkan jumlah uang: ");
                     int uangPembayaran = input.nextInt();
