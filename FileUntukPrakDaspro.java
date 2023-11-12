@@ -117,8 +117,9 @@ public class FileUntukPrakDaspro {
                             }
                             System.out.println();
                         }
-                        System.out.print("Pilih baris (1-5) dan kolom (1-5) kursi atau ketik '0' untuk selesai: ");
+                        System.out.print("Pilih baris (1-5) kursi atau ketik '0' untuk selesai: ");
                         int baris = input.nextInt();
+                        System.out.print("Pilih kolom (1-5) kursi atau ketik '0' untuk selesai: ");
                         int kolom = input.nextInt();
                         if (baris == 0 || kolom == 0) {
                             lanjutPilihKursi = false;
