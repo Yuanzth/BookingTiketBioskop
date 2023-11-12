@@ -4,6 +4,7 @@ public class FiturPemilihanKursi {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        boolean lanjutPilihKursi = true;
         char[][] kursi = new char[5][5]; // Studio dengan 5 baris dan 5 kolom
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -11,7 +12,6 @@ public class FiturPemilihanKursi {
             }
         }
 
-        boolean lanjutPilihKursi = true;
         while (lanjutPilihKursi) {
             System.out.println("Status Kursi (X: Terisi, O: Kosong):");
             for (int i = 0; i < 5; i++) {
