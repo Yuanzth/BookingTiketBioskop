@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class test {
+    static int[] studioPrices = {30000, 40000, 50000, 60000};
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
