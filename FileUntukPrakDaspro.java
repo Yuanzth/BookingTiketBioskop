@@ -27,7 +27,7 @@ public class FileUntukPrakDaspro {
             if (userIndex >= 0) {
                 isLoggedIn = true;
                 loggedInUser = username;
-                System.out.println("Selamat datang, " + username + "!");
+                System.out.println("Selamat datang, " + loggedInUser + "!");
             } else {
                 System.out.println("Login gagal. Periksa kembali nama pengguna dan kata sandi.");
             }
