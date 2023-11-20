@@ -10,7 +10,7 @@ public class FiturPemilihanStudio {
 
         cekStudio = 'A';
 
-        do 
+        do          
         {
             cekStudio = 'A';
         do 
