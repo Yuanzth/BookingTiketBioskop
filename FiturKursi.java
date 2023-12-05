@@ -247,5 +247,9 @@ public class FiturKursi {
         }
     }
 
+    public static void main(String[] args) {
+        
+    }
+    
     }
 
