@@ -4,7 +4,7 @@ public class finalyProjectBookingTiketBioskop {
     static int jdlinput = -1; // inisialisasi dengan nilai default yang tidak valid //
     static Scanner inputUntukJdlFilm = new Scanner(System.in);
     static String[] jdl_film = {"WISH", "Thr Marvel", "Napoleon"};
-    static String filmTerpilih = "";
+    static String filmTerpilih =                                                                                                                                                                            "";
 
     static Scanner inputUntukStudio = new Scanner(System.in);
     static int studioInput = -1; // inisialisasi dengan nilai default yang tidak valid//
