@@ -382,15 +382,21 @@ public class BookingTiketBioskop {
         }
         System.out.println("=========================================");
     }
-
     static String getStudioTerpilih() {
-        if (filmTerpilih.equalsIgnoreCase("WISH")) {
+        if (filmTerpilih.equalsIgnoreCase("WISH")) 
+        {
             return studioWISH[studioInput];
-        } else if (filmTerpilih.equalsIgnoreCase("The Marvels")) {
+        } 
+        else if (filmTerpilih.equalsIgnoreCase("The Marvels")) 
+        {
             return studioTheMarvels[studioInput];
-        } else if (filmTerpilih.equalsIgnoreCase("Napoleon")) {
+        } 
+        else if (filmTerpilih.equalsIgnoreCase("Napoleon")) 
+        {
             return studioNapoleon[studioInput];
-        } else {
+        } 
+        else 
+        {
             return "";
         }
     }
