@@ -79,14 +79,17 @@ public class BookingTiketBioskop {
         boolean programRunning = true;
 
         while (programRunning) {
-            System.out.println("Menu Utama:");
-            System.out.println("1. Login sebagai Kasir");
-            System.out.println("2. Login sebagai Admin");
-            System.out.println("3. Exit");
+            System.out.println("|======================================|");
+            System.out.println("|              Menu Utama              |");
+            System.out.println("|======================================|");
+            System.out.println("|        1. Login sebagai Kasir        |");
+            System.out.println("|        2. Login sebagai Admin        |");
+            System.out.println("|        3. Exit                       |");
+            System.out.println("|======================================|");
 
-            System.out.print("Pilih opsi: ");
+            System.out.print("|     Pilih opsi: ");
             int menuUtamaChoice = input.nextInt();
-
+            System.out.println("|======================================|");
             switch (menuUtamaChoice) {
                 case 1:
                     loginKasir();
