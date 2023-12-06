@@ -346,7 +346,8 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         kursiTerpilih = new String[25]; // Reset array kursiTerpilih
         indexKursiTerpilih = 0; //Reset index kursi
-    }    static void prosesPembayaran() 
+    }    
+    static void prosesPembayaran() 
     {
         System.out.println("                                                    ");
         System.out.println("|==================================================|");
