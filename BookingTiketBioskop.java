@@ -53,6 +53,7 @@ public class BookingTiketBioskop {
     static char[][] StudioDeluxeTheMarvels = new char[5][5]; // StudioDeluxeTheMarvels dengan 5 baris dan 5 kolom
     static char[][] StudioThePremiereNapoleon = new char[5][5]; // StudioThePremiereNapoleon dengan 5 baris dan 5 kolom
     static int indexKursiTerpilih = 0; // Menunjukkan indeks terakhir kursi terpilih
+    static boolean isPemilihanDibatalkan = false;
     //>>>>>>>>>>>>>>>>>>>>>>>>>> Kebutuhan Untuk Kursi Studio <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>> 
@@ -109,12 +110,15 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            System.out.println("Pilih opsi untuk melanjutkan!:");
-            System.out.println("1. Lanjut Sebagai Kasir");
-            System.out.println("2. Kembali ke Menu Utama");
-            System.out.print("Pilih opsi: ");
+            
+            System.out.println("|     Pilih opsi untuk melanjutkan!    |");
+            System.out.println("|======================================|");
+            System.out.println("|     1. Lanjut Sebagai Kasir          |");
+            System.out.println("|     2. Kembali ke Menu Utama         |");
+            System.out.println("|======================================|");
+            System.out.print("|     Pilih opsi: ");
             int exitChoice = input.nextInt();
-
+            System.out.println("|======================================|");
             switch (exitChoice) {
                 case 1:
                     isLoggedIn = validateLoginAsKasir();
@@ -134,15 +138,18 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = true; // Tambahkan variabel untuk status login
     
         while (isLoggedIn) {
-            System.out.println("Menu:");
-            System.out.println("1. Pemesanan Tiket");
-            System.out.println("2. Logout");
+            System.out.println("|               Menu Kasir             |");
+            System.out.println("|======================================|");
+            System.out.println("|          1. Pemesanan Tiket          |");
+            System.out.println("|          2. Logout                   |");
+            System.out.println("|======================================|");
     
-            System.out.print("Pilih opsi: ");
+            System.out.print("|     Pilih opsi: ");
             int menuChoice = input.nextInt();
-    
+            System.out.println("|======================================|");
             switch (menuChoice) {
                 case 1:
+                    isPemilihanDibatalkan = false;
                     PemilihanFILM();
                     filmTerpilih = jdl_film[jdlinput];
     
@@ -151,35 +158,43 @@ public class BookingTiketBioskop {
                         if (studioInput == 0) {
                             PemilihanJumlahTiket();
                             PemilihanKursiStudioDeluxeWish();
-                            tampilkanRingkasan();
-                            prosesPembayaran();
+                            if (!isPemilihanDibatalkan) {
+                                tampilkanRingkasan();
+                                prosesPembayaran();
+                            }
                         }
                     } else if (filmTerpilih.equalsIgnoreCase("The Marvels")) {
                         PemilihanStudioTheMarvels();
                         if (studioInput == 0) {
                             PemilihanJumlahTiket();
                             PemilihanKursiStudioDeluxeTheMarvels();
-                            tampilkanRingkasan();
-                            prosesPembayaran();
+                            if (!isPemilihanDibatalkan) {
+                                tampilkanRingkasan();
+                                prosesPembayaran();
+                            }
                         } else if (studioInput == 1) {
                             PemilihanJumlahTiket();
                             PemilihanKursiStudioIMAXTheMarvels();
-                            tampilkanRingkasan();
-                            prosesPembayaran();
+                            if (!isPemilihanDibatalkan) {
+                                tampilkanRingkasan();
+                                prosesPembayaran();
+                            }
                         }
                     } else if (filmTerpilih.equalsIgnoreCase("Napoleon")) {
                         PemilihanStudioNapoleon();
                         if (studioInput == 0) {
                             PemilihanJumlahTiket();
                             PemilihanKursiStudioThePremiereNapoleon();
-                            tampilkanRingkasan();
-                            prosesPembayaran();
+                            if (!isPemilihanDibatalkan) {
+                                tampilkanRingkasan();
+                                prosesPembayaran();
+                            }
                         }
                     }
                     break;
     
                 case 2:
-                    System.out.println("Logout " + loggedInUser);
+                    System.out.println("[Logout " + loggedInUser + "]" );
                     isLoggedIn = false; // Set status login menjadi false
                     break;
     
@@ -195,20 +210,23 @@ public class BookingTiketBioskop {
         Scanner inputUser = new Scanner(System.in);
         String username, password;
     
-        System.out.print("Masukkan nama pengguna: ");
+        System.out.print("|    Masukkan nama pengguna: ");
         username = inputUser.nextLine();  // Gunakan inputUser di sini
-    
-        System.out.print("Masukkan kata sandi: ");
+        System.out.println("|======================================|");
+        System.out.print("|    Masukkan kata sandi: ");
         password = inputUser.nextLine();  // Juga gunakan inputUser di sini
-    
+        System.out.println("|======================================|");
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("Selamat datang, " + loggedInUser + "!");
+                System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
+                System.out.println("|======================================|");
                 return true; // Login sukses
             }
         }
-        System.out.println("Login gagal. Periksa kembali nama pengguna dan kata sandi.");
+        
+        System.out.println("|     Login gagal, Periksa Kembali!    |");
+        System.out.println("|======================================|");
         return false; // Login gagal
     }
 //======================================================================================//
@@ -216,12 +234,14 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            System.out.println("Pilih opsi untuk melanjutkan!:");
-            System.out.println("1. Lanjut Sebagai Admin");
-            System.out.println("2. Kembali ke Menu Utama");
-            System.out.print("Pilih opsi: ");
+            System.out.println("|     Pilih opsi untuk melanjutkan!    |");
+            System.out.println("|======================================|");
+            System.out.println("|     1. Lanjut Sebagai Admin          |");
+            System.out.println("|     2. Kembali ke Menu Utama         |");
+            System.out.println("|======================================|");
+            System.out.print("|     Pilih opsi: ");
             int exitChoice = input.nextInt();
-
+            System.out.println("|======================================|");
             switch (exitChoice) {
                 case 1:
                     isLoggedIn = validateLoginAsAdmin();
@@ -240,21 +260,25 @@ public class BookingTiketBioskop {
     static boolean validateLoginAsAdmin() {
         Scanner inputUser = new Scanner(System.in);
         String username, password;
-    
-        System.out.print("Masukkan nama pengguna: ");
+
+        System.out.print("|    Masukkan nama pengguna: ");
         username = inputUser.nextLine();  // Gunakan inputUser di sini
+        System.out.println("|======================================|");
+
     
-        System.out.print("Masukkan kata sandi: ");
+        System.out.print("|    Masukkan kata sandi: ");
         password = inputUser.nextLine();  // Juga gunakan inputUser di sini
     
         for (int i = 0; i < usernames.length; i++) {
             if (userAdmin[i].equals(username) && passAdmin[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("Selamat datang, " + loggedInUser + "!");
+                System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
+                System.out.println("|======================================|");
                 return true; // Login sukses
             }
         }
-        System.out.println("Login gagal. Periksa kembali nama pengguna dan kata sandi.");
+        System.out.println("|     Login gagal, Periksa Kembali!    |");
+        System.out.println("|======================================|");
         return false; // Login gagal
     }
     static void processAdminMenu(){
@@ -262,12 +286,16 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = true;
 
         while (isLoggedIn) {
-            System.out.println("Menu:");
-            System.out.println("1. Tampilkan History Transaksi Kasir");
-            System.out.println("2. Tampilkan History Transaksi Keseluruhan");
-            System.out.println("3. Logout");
+            System.out.println("                                                                                      ");
+            System.out.println("|=====================================================================================|");
+            System.out.println("|                                            Menu:                                    |");
+            System.out.println("|-------------------------------------------------------------------------------------|");
+            System.out.println("| 1. Tampilkan History Transaksi Kasir                                                |");
+            System.out.println("| 2. Tampilkan History Transaksi Keseluruhan                                          |");
+            System.out.println("| 3. Logout                                                                           |");
+            System.out.println("|-------------------------------------------------------------------------------------|");
 
-            System.out.print("Pilih opsi: ");
+            System.out.print("| Pilih opsi: ");
             int menuChoice = input.nextInt();
 
             switch (menuChoice) {
@@ -279,26 +307,32 @@ public class BookingTiketBioskop {
                     break;                          
 
                 case 3:
-                    System.out.println("Logout " + loggedInUser);
+                    System.out.println("[Logout " + loggedInUser + "]" );
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println("|-------------------------------------------------------------------------------------|");
+                    System.out.println("|                        Pilihan tidak valid. Silakan pilih lagi.                     |");
+                    System.out.println("|-------------------------------------------------------------------------------------|");
                     break;
             }
         }  
     }
-    static void tampilkanRingkasan() {
-        System.out.println("===== Ringkasan Pemesanan =====");
-        System.out.println("Film: " + filmTerpilih);
-        System.out.println("Studio: " + getStudioTerpilih());
-        System.out.println("Jumlah Tiket: " + jumlahTiket);
-        System.out.println("Pilihan Kursi: ");
-        for (int i = 0; i < indexKursiTerpilih; i++) 
+    static void tampilkanRingkasan() 
+    {
+        System.out.println("                                                    ");
+        System.out.println("|==================================================|");
+        System.out.println("|               - Ringkasan Pemesanan -            |");
+        System.out.println("|--------------------------------------------------|");
+        System.out.println(  "|            Film: " + filmTerpilih + "       ");
+        System.out.println(  "|            Studio: " + getStudioTerpilih() + "      ");
+        System.out.println(  "|            Jumlah Tiket: " + jumlahTiket);
+        System.out.println("|            Pilihan Kursi: ");
+        for (int i = 0; i < indexKursiTerpilih; i++)
         {
             System.out.println(kursiTerpilih[i]);
         }
-        System.out.println("===============================");
+        System.out.println("|==================================================|");
         kursiTerpilih = new String[25]; // Reset array kursiTerpilih
         indexKursiTerpilih = 0; //Reset index kursi
     }
@@ -409,7 +443,7 @@ public class BookingTiketBioskop {
         {
         System.out.println("|"+(i + 1) + ". " + jdl_film[i]);
         }
-        System.out.print(  "|Pilih nomor film yang ingin Anda tonton:  ");
+        System.out.print(  "|Pilih nomor film yang ingin Anda tonton: ");
         jdlinput = inputUntukJdlFilm.nextInt();
         if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
         jdlinput--; // Mengurangi 1 karena array dimulai dari 0
