@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public class BookingTiketBioskop {
 
+    public static String spaces(int n) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            result.append(" ");
+        }
+        return result.toString();
+    }
+
     static String[] usernames = {"kasir1", "kasir2"};
     static String[] passwords = {"123", "456"};
     static String[] userAdmin = {"admin"};
@@ -465,12 +473,13 @@ public class BookingTiketBioskop {
     static void PemilihanFILM(){
         // Pilih Film
         System.out.println("|==============================|");
-        System.out.println("|Daftar Film yang Tersedia:    |");
+        System.out.println("|  Daftar Film yang Tersedia:  |");
         System.out.println("|==============================|");
         for (int i = 0; i < jdl_film.length; i++) 
         {
-        System.out.println("|"+(i + 1) + ". " + jdl_film[i]);
+            System.out.println("|" + (i + 1) + ". " + jdl_film[i] + spaces(31 - (jdl_film[i].length() + 4)) + "|");
         }
+        System.out.println("|==============================|");
         System.out.print(  "|Pilih nomor film yang ingin Anda tonton: ");
         jdlinput = inputUntukJdlFilm.nextInt();
         if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
