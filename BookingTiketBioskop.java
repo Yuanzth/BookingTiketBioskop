@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BookingTiketBioskop {
-
+    
     public static String spaces(int n) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++) {
@@ -9,7 +9,6 @@ public class BookingTiketBioskop {
         }
         return result.toString();
     }
-
     static String[] usernames = {"kasir1", "kasir2"};
     static String[] passwords = {"123", "456"};
     static String[] userAdmin = {"admin"};
