@@ -459,16 +459,16 @@ public class BookingTiketBioskop {
     
         for (int i = 0; i < indexHistory; i++) {
             System.out.println("| > Transaksi " + (i + 1) + ": Film = " + historyFilm[i] +
-                    spaces(50 - (historyFilm[i].length() + 19)) +
+                    spaces(50 - (historyFilm[i].length() + 23)) +
                     "|");
             System.out.println("|                Studio = " + historyStudio[i] +
-                    spaces(50 - (historyStudio[i].length() + 19)) +
+                    spaces(50 - (historyStudio[i].length() + 25)) +
                     "|");
             System.out.println("|                Jumlah Tiket = " + historyJumlahTiket[i] +
-                    spaces(50 - (String.valueOf(historyJumlahTiket[i]).length() + 19)) +
+                    spaces(50 - (String.valueOf(historyJumlahTiket[i]).length() + 31)) +
                     "|");
-            System.out.println("|                 Pendapatan = " + historyPendapatan[i] +
-                    spaces(50 - (String.valueOf(historyPendapatan[i]).length() + 19)) +
+            System.out.println("|                Pendapatan = " + historyPendapatan[i] +
+                    spaces(50 - (String.valueOf(historyPendapatan[i]).length() + 29)) +
                     "|");
             System.out.println("|                                                  |");
         }
