@@ -486,6 +486,30 @@ public class BookingTiketBioskop {
             return "";
         }
     }
+    static void PemilihanFILM(){
+        // Pilih Film
+        System.out.println("|==================================================|");
+        System.out.println("|              Daftar Film yang Tersedia:          |");
+        System.out.println("|==================================================|");
+        for (int i = 0; i < jdl_film.length; i++) 
+        {
+            System.out.println("|" + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 4)) + "|");
+        }
+        System.out.println("|==================================================|");
+        System.out.print(  "|Pilih nomor film yang ingin Anda tonton: ");
+        jdlinput = inputUntukJdlFilm.nextInt();
+        if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
+        jdlinput--; // Mengurangi 1 karena array dimulai dari 0
+        System.out.println(  "|Film yang Anda pilih: " + jdl_film[jdlinput] +"|");
+        } 
+        else 
+        {
+        System.out.println("|==================================================|");
+        System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
+        System.out.println("|==================================================|");
+        }       
+    }
+
     static void PemilihanStudioWish(){
         // Pilih Studio
         System.out.println("|==================================================|");
