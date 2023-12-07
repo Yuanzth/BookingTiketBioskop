@@ -153,7 +153,7 @@ public class BookingTiketBioskop {
             System.out.println("|                 2. Logout                        |");
             System.out.println("|==================================================|");
     
-            System.out.print("|            Pilih opsi: ");
+            System.out.print(  "|                    Pilih opsi: ");
             int menuChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuChoice) {
@@ -246,12 +246,12 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            System.out.println("|     Pilih opsi untuk melanjutkan!    |");
-            System.out.println("|======================================|");
-            System.out.println("|     1. Lanjut Sebagai Admin          |");
-            System.out.println("|     2. Kembali ke Menu Utama         |");
-            System.out.println("|======================================|");
-            System.out.print("|     Pilih opsi: ");
+            System.out.println("|            Pilih opsi untuk melanjutkan!         |");
+            System.out.println("|==================================================|");
+            System.out.println("|            1. Lanjut Sebagai Admin               |");
+            System.out.println("|            2. Kembali ke Menu Utama              |");
+            System.out.println("|==================================================|");
+            System.out.print("  |                  Pilih opsi: ");
             int exitChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (exitChoice) {
