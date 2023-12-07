@@ -224,17 +224,17 @@ public class BookingTiketBioskop {
         Scanner inputUser = new Scanner(System.in);
         String username, password;
     
-        System.out.print("|    Masukkan nama pengguna: ");
+        System.out.print("|       Masukkan nama pengguna: ");
         username = inputUser.nextLine();  // Gunakan inputUser di sini
-        System.out.println("|======================================|");
-        System.out.print("|    Masukkan kata sandi: ");
+        System.out.println("|==================================================|");
+        System.out.print("|       Masukkan kata sandi: ");
         password = inputUser.nextLine();  // Juga gunakan inputUser di sini
-        System.out.println("|======================================|");
+        System.out.println("|==================================================|");
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
                 System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
-                System.out.println("|======================================|");
+                System.out.println("|==================================================|");
                 return true; // Login sukses
             }
         }
@@ -575,7 +575,7 @@ public class BookingTiketBioskop {
     }
     static void fillArrayWithZero(char[][] array) {
         for (int i = 0; i < array.length; i++) {
-            for i(int j = 0; j < array[i].length; j++) {
+            for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = '0';
             }
         }
