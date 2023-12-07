@@ -233,13 +233,13 @@ public class BookingTiketBioskop {
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
+                System.out.println("|             Selamat datang, " + loggedInUser + "!              |");
                 System.out.println("|==================================================|");
                 return true; // Login sukses
             }
         }
-        System.out.println("|     Login gagal, Periksa Kembali!    |");
-        System.out.println("|======================================|");
+        System.out.println("|           Login gagal, Periksa Kembali!          |");
+        System.out.println("|==================================================|");
         return false; // Login gagal
     }
 //======================================================================================//
@@ -247,14 +247,14 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            System.out.println("|     Pilih opsi untuk melanjutkan!    |");
-            System.out.println("|======================================|");
-            System.out.println("|     1. Lanjut Sebagai Admin          |");
-            System.out.println("|     2. Kembali ke Menu Utama         |");
-            System.out.println("|======================================|");
-            System.out.print("|     Pilih opsi: ");
+            System.out.println("|           Pilih opsi untuk melanjutkan!          |");
+            System.out.println("|==================================================|");
+            System.out.println("|           1. Lanjut Sebagai Admin                |");
+            System.out.println("|           2. Kembali ke Menu Utama               |");
+            System.out.println("|==================================================|");
+            System.out.print("|           Pilih opsi: ");
             int exitChoice = input.nextInt();
-            System.out.println("|======================================|");
+            System.out.println("|==================================================|");
             switch (exitChoice) {
                 case 1:
                     isLoggedIn = validateLoginAsAdmin();
@@ -274,24 +274,24 @@ public class BookingTiketBioskop {
         Scanner inputUser = new Scanner(System.in);
         String username, password;
 
-        System.out.print("|    Masukkan nama pengguna: ");
+        System.out.print("|          Masukkan nama pengguna: ");
         username = inputUser.nextLine();  // Gunakan inputUser di sini
-        System.out.println("|======================================|");
+        System.out.println("|==================================================|");
 
     
-        System.out.print("|    Masukkan kata sandi: ");
+        System.out.print("|          Masukkan kata sandi: ");
         password = inputUser.nextLine();  // Juga gunakan inputUser di sini
     
         for (int i = 0; i < usernames.length; i++) {
             if (userAdmin[i].equals(username) && passAdmin[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
-                System.out.println("|======================================|");
+                System.out.println("|             Selamat datang, " + loggedInUser + "!             |");
+                System.out.println("|==================================================|");
                 return true; // Login sukses
             }
         }
-        System.out.println("|     Login gagal, Periksa Kembali!    |");
-        System.out.println("|======================================|");
+        System.out.println("|           Login gagal, Periksa Kembali!          |");
+        System.out.println("|==================================================|");
         return false; // Login gagal
     }
     static void processAdminMenu(){
