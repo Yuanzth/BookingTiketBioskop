@@ -87,20 +87,19 @@ public class BookingTiketBioskop {
 
         while (programRunning) {
             System.out.println("|==================================================|");
-            System.out.println("|                   Menu Utama                     |");
+            System.out.println("|                    Menu Utama                    |");
             System.out.println("|==================================================|");
             System.out.println("|             1. Login sebagai Kasir               |");
             System.out.println("|             2. Login sebagai Admin               |");
             System.out.println("|             3. Exit                              |");
             System.out.println("|==================================================|");
 
-            System.out.print("|             Pilih opsi: ");
+            System.out.print(  "|                   Pilih opsi: ");
             int menuUtamaChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuUtamaChoice) {
                 case 1:
                     loginKasir();
-                    break;
                 case 2:
                     loginAdmin();
                     break;
@@ -126,7 +125,7 @@ public class BookingTiketBioskop {
             System.out.println("|            1. Lanjut Sebagai Kasir               |");
             System.out.println("|            2. Kembali ke Menu Utama              |");
             System.out.println("|==================================================|");
-            System.out.print("|            Pilih opsi: ");
+            System.out.print(  "|                   Pilih opsi: ");
             int exitChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (exitChoice) {
@@ -523,20 +522,20 @@ public class BookingTiketBioskop {
     }
     static void PemilihanStudioTheMarvels(){
         // Pilih Studio
-        System.out.println("|==============================|");
-        System.out.println("|Daftar Studio yang Tersedia:  |");
-        System.out.println("|==============================|");
+        System.out.println("|============================================|");
+        System.out.println("|         Daftar Studio yang Tersedia:       |");
+        System.out.println("|============================================|");
         for (int i = 0; i < studioTheMarvels.length; i++) 
         {
         System.out.println(  "|" + (i + 1) + ". " + studioTheMarvels[i] + " (Harga: " + hrg_stdTheMarvels[i] +")      |");
-        System.out.println("|==============================|");
+        System.out.println("|============================================|");
         }
         System.out.print(  "|Pilih nomor studio: ");
         studioInput = inputUntukStudio.nextInt();
         if (studioInput >= 1 && studioInput <= studioTheMarvels.length) 
         {
         studioInput--; // Mengurangi 1 karena array dimulai dari 0
-        System.out.println("|===============================|");
+        System.out.println("|============================================|");
         System.out.println(  "|Studio yang Anda pilih: " + studioTheMarvels[studioInput] +  "   |");
         System.out.println("|===============================|"); 
         } 
