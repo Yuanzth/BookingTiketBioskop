@@ -403,25 +403,30 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
         }
     }
-    static void tampilkanHistoryTransaksi() 
-    {
-        System.out.println("                                                                                      ");
-        System.out.println("|=====================================================================================|");
-        System.out.println("|                                  - History Transaksi -                              |");
-        System.out.println("|=====================================================================================|");
-        System.out.println("| Kasir 1:                                                                            |");
-
+    static void tampilkanHistoryTransaksi() {
+        System.out.println("                                                    ");
+        System.out.println("|==================================================|");
+        System.out.println("|               - History Transaksi -              |");
+        System.out.println("|==================================================|");
+        System.out.println("| Kasir 1:                                         |");
+    
         for (int i = 0; i < indexHistoryKasir1; i++) {
             System.out.println("| > Transaksi " + (i + 1) + ": Jumlah Tiket = " + historyJumlahTiketKasir1[i] +
-                    ", Pendapatan = " + historyPendapatanKasir1[i] + "                                 |");
+                    spaces(51 - (String.valueOf(historyJumlahTiketKasir1[i]).length()+32)) + "|");
+            System.out.println("|                Pendapatan = " + historyPendapatanKasir1[i] +
+                    spaces(51 - (String.valueOf(historyPendapatanKasir1[i]).length()+30)) + "|");
+            System.out.println("|" + spaces(50) + "|");
         }
-        System.out.println("|-------------------------------------------------------------------------------------|");
-        System.out.println("| Kasir 2:                                                                            |");
+        System.out.println("|--------------------------------------------------|");
+        System.out.println("| Kasir 2:                                         |");
         for (int i = 0; i < indexHistoryKasir2; i++) {
             System.out.println("| > Transaksi " + (i + 1) + ": Jumlah Tiket = " + historyJumlahTiketKasir2[i] +
-                    ", Pendapatan = " + historyPendapatanKasir2[i]);
+                    spaces(51 - (String.valueOf(historyJumlahTiketKasir2[i]).length()+32)) + "|");
+            System.out.println("|                Pendapatan = " + historyPendapatanKasir2[i] +
+                    spaces(51 - (String.valueOf(historyPendapatanKasir2[i]).length()+30)) + "|");
+          System.out.println("|" + spaces(50) + "|");
         }
-        System.out.println("|=====================================================================================|");
+        System.out.println("|==================================================|");
     }    
     static int hitungTotalHarga() {
         int hargaTiket = 0;
