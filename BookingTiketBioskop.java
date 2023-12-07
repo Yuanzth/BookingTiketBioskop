@@ -226,10 +226,10 @@ public class BookingTiketBioskop {
     
         System.out.print("|    Masukkan nama pengguna: ");
         username = inputUser.nextLine();  // Gunakan inputUser di sini
-        System.out.println("|======================================|");
+        System.out.println("|==================================================|");
         System.out.print("|    Masukkan kata sandi: ");
         password = inputUser.nextLine();  // Juga gunakan inputUser di sini
-        System.out.println("|======================================|");
+        System.out.println("|==================================================|");
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
@@ -475,14 +475,14 @@ public class BookingTiketBioskop {
     }
     static void PemilihanFILM(){
         // Pilih Film
-        System.out.println("|==============================|");
-        System.out.println("|  Daftar Film yang Tersedia:  |");
-        System.out.println("|==============================|");
+        System.out.println("|==================================================|");
+        System.out.println("|              Daftar Film yang Tersedia:          |");
+        System.out.println("|==================================================|");
         for (int i = 0; i < jdl_film.length; i++) 
         {
-            System.out.println("|" + (i + 1) + ". " + jdl_film[i] + spaces(31 - (jdl_film[i].length() + 4)) + "|");
+            System.out.println("|" + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 4)) + "|");
         }
-        System.out.println("|==============================|");
+        System.out.println("|==================================================|");
         System.out.print(  "|Pilih nomor film yang ingin Anda tonton: ");
         jdlinput = inputUntukJdlFilm.nextInt();
         if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
@@ -491,9 +491,9 @@ public class BookingTiketBioskop {
         } 
         else 
         {
-        System.out.println("|===========================================|");
-        System.out.println("|Nomor film yang Anda masukkan tidak valid. |");
-        System.out.println("|===========================================|");
+        System.out.println("|==================================================|");
+        System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
+        System.out.println("|==================================================|");
         }       
     }
     static void PemilihanStudioWish(){
