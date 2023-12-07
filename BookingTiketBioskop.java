@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BookingTiketBioskop {
-    
+
     public static String spaces(int n) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++) {
@@ -86,17 +86,17 @@ public class BookingTiketBioskop {
         boolean programRunning = true;
 
         while (programRunning) {
-            System.out.println("|======================================|");
-            System.out.println("|              Menu Utama              |");
-            System.out.println("|======================================|");
-            System.out.println("|        1. Login sebagai Kasir        |");
-            System.out.println("|        2. Login sebagai Admin        |");
-            System.out.println("|        3. Exit                       |");
-            System.out.println("|======================================|");
+            System.out.println("|==================================================|");
+            System.out.println("|                   Menu Utama                     |");
+            System.out.println("|==================================================|");
+            System.out.println("|             1. Login sebagai Kasir               |");
+            System.out.println("|             2. Login sebagai Admin               |");
+            System.out.println("|             3. Exit                              |");
+            System.out.println("|==================================================|");
 
-            System.out.print("|     Pilih opsi: ");
+            System.out.print("|             Pilih opsi: ");
             int menuUtamaChoice = input.nextInt();
-            System.out.println("|======================================|");
+            System.out.println("|==================================================|");
             switch (menuUtamaChoice) {
                 case 1:
                     loginKasir();
@@ -121,14 +121,14 @@ public class BookingTiketBioskop {
 
         while (!isLoggedIn) {
             
-            System.out.println("|     Pilih opsi untuk melanjutkan!    |");
-            System.out.println("|======================================|");
-            System.out.println("|     1. Lanjut Sebagai Kasir          |");
-            System.out.println("|     2. Kembali ke Menu Utama         |");
-            System.out.println("|======================================|");
-            System.out.print("|     Pilih opsi: ");
+            System.out.println("|          Pilih opsi untuk melanjutkan!           |");
+            System.out.println("|==================================================|");
+            System.out.println("|            1. Lanjut Sebagai Kasir               |");
+            System.out.println("|            2. Kembali ke Menu Utama              |");
+            System.out.println("|==================================================|");
+            System.out.print("|            Pilih opsi: ");
             int exitChoice = input.nextInt();
-            System.out.println("|======================================|");
+            System.out.println("|==================================================|");
             switch (exitChoice) {
                 case 1:
                     isLoggedIn = validateLoginAsKasir();
@@ -148,15 +148,15 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = true; // Tambahkan variabel untuk status login
     
         while (isLoggedIn) {
-            System.out.println("|               Menu Kasir             |");
-            System.out.println("|======================================|");
-            System.out.println("|          1. Pemesanan Tiket          |");
-            System.out.println("|          2. Logout                   |");
-            System.out.println("|======================================|");
+            System.out.println("|                     Menu Kasir                   |");
+            System.out.println("|==================================================|");
+            System.out.println("|                 1. Pemesanan Tiket               |");
+            System.out.println("|                 2. Logout                        |");
+            System.out.println("|==================================================|");
     
-            System.out.print("|     Pilih opsi: ");
+            System.out.print("|            Pilih opsi: ");
             int menuChoice = input.nextInt();
-            System.out.println("|======================================|");
+            System.out.println("|==================================================|");
             switch (menuChoice) {
                 case 1:
                     isPemilihanDibatalkan = false;
@@ -204,12 +204,16 @@ public class BookingTiketBioskop {
                     break;
     
                 case 2:
-                    System.out.println("[Logout " + loggedInUser + "]" );
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println("|                  Logout " + loggedInUser + "                   |" );
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
                     isLoggedIn = false; // Set status login menjadi false
                     break;
     
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println("|     Pilihan tidak valid. Silakan pilih lagi.     |");
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
                     break;
             }
         }
@@ -234,7 +238,6 @@ public class BookingTiketBioskop {
                 return true; // Login sukses
             }
         }
-        
         System.out.println("|     Login gagal, Periksa Kembali!    |");
         System.out.println("|======================================|");
         return false; // Login gagal
@@ -313,7 +316,7 @@ public class BookingTiketBioskop {
                     tampilkanHistoryTransaksi();                            
                     break;
                 case 2:
-                    tampilkanHistoryTransaksiKeseluruhan();
+                    tampilkanHistoryTransaksiAll();
                     break;                          
 
                 case 3:
@@ -443,7 +446,7 @@ public class BookingTiketBioskop {
         }
         return hargaTiket;
     }
-    static void tampilkanHistoryTransaksiKeseluruhan() 
+    static void tampilkanHistoryTransaksiAll() 
     {
         System.out.println("                                                                                      ");
         System.out.println("|=====================================================================================|");
