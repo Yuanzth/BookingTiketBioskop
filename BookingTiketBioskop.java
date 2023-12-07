@@ -233,7 +233,7 @@ public class BookingTiketBioskop {
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("|      Selamat datang, " + loggedInUser + "!         |");
+                System.out.println("|             Selamat datang, " + loggedInUser + "!              |");
                 System.out.println("|==================================================|");
                 return true; // Login sukses
             }
@@ -285,7 +285,7 @@ public class BookingTiketBioskop {
         for (int i = 0; i < usernames.length; i++) {
             if (userAdmin[i].equals(username) && passAdmin[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("|             Selamat datang, " + loggedInUser + "!             |");
+                System.out.println("|               Selamat datang, " + loggedInUser + "!             |");
                 System.out.println("|==================================================|");
                 return true; // Login sukses
             }
