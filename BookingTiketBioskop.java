@@ -38,7 +38,9 @@ public class BookingTiketBioskop {
     static String[] kursiTerpilih = new String[25]; // Menyimpan indeks kursi yang dipilih
 
     static void PemilihanJumlahTiket() {
-        System.out.print("Masukkan jumlah tiket yang ingin dipesan: ");
+    
+        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
+
         jumlahTiket = inputUntukJdlFilm.nextInt();
         if (jumlahTiket > 25) {
             System.out.println("Kursi di dalam studio hanya berjumlah 25");
@@ -50,6 +52,8 @@ public class BookingTiketBioskop {
         }
         else 
         {}
+        System.out.println(("|==================================================|"));
+
     }
     // >>>>>>> Variabel dan fungsi untuk jumlah tiket dan pemilihan kursi <<<<<<<< //
 
@@ -109,7 +113,9 @@ public class BookingTiketBioskop {
                     System.out.println("Program berakhir.");
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     break;
             }
         }
@@ -140,7 +146,7 @@ public class BookingTiketBioskop {
                     return; // Kembali ke menu utama
                 default:
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-                    System.out.println("        Pilihan tidak valid. Silakan pilih lagi.    ");
+                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
 
                     break;
@@ -494,18 +500,18 @@ public class BookingTiketBioskop {
     static void PemilihanFILM(){
         // Pilih Film
         System.out.println("|==================================================|");
-        System.out.println("|             Daftar Film yang Tersedia:           |");
+        System.out.println("|              Daftar Film yang Tersedia:          |");
         System.out.println("|==================================================|");
         for (int i = 0; i < jdl_film.length; i++) 
         {
-            System.out.println("|             " + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 17)) + "|");
+            System.out.println("|              " + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 18)) + "|");
         }
         System.out.println("|==================================================|");
         System.out.print(  "|   Pilih nomor film yang ingin Anda tonton: ");
         jdlinput = inputUntukJdlFilm.nextInt();
         if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
         jdlinput--; // Mengurangi 1 karena array dimulai dari 0
-        System.out.println("|   Film yang Anda pilih: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 26))+"|");
+        System.out.println("|    Film yang Anda pilih: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 27))+"|");
         } 
         else 
         {
@@ -521,7 +527,7 @@ public class BookingTiketBioskop {
         System.out.println("|            Daftar Studio yang Tersedia:          |");
         System.out.println("|==================================================|");
         for (int i = 0; i < studioWISH.length; i++) {
-        System.out.println("|             " + (i + 1) + ". " + studioWISH[i] + " (Harga: " + hrg_stdWISH[i] + ")"+ spaces(51 - (studioWISH[i].length() + String.valueOf(hrg_stdWISH[i]).length()  + 27))+"|");
+        System.out.println("|" + (i + 1) + ". " + studioWISH[i] + " (Harga: " + hrg_stdWISH[i] + ")"+ "     |");
         System.out.println("|==================================================|");
         }
         System.out.print(  "|Pilih nomor studio: ");
