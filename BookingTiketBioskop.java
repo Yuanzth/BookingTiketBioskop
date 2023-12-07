@@ -139,7 +139,10 @@ public class BookingTiketBioskop {
                 case 2:
                     return; // Kembali ke menu utama
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("        Pilihan tidak valid. Silakan pilih lagi.    ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+
                     break;
             }
         }
@@ -210,9 +213,9 @@ public class BookingTiketBioskop {
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
-                    System.out.println("|     Pilihan tidak valid. Silakan pilih lagi.     |");
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.     ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     break;
             }
         }
@@ -251,7 +254,7 @@ public class BookingTiketBioskop {
             System.out.println("|            1. Lanjut Sebagai Admin               |");
             System.out.println("|            2. Kembali ke Menu Utama              |");
             System.out.println("|==================================================|");
-            System.out.print("  |                  Pilih opsi: ");
+            System.out.print(  "|                  Pilih opsi: ");
             int exitChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (exitChoice) {
@@ -264,7 +267,9 @@ public class BookingTiketBioskop {
                 case 2:
                     return; // Kembali ke menu utama
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.     ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     break;
             }
         }
