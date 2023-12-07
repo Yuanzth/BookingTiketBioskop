@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BookingTiketBioskop {
-
+    
     public static String spaces(int n) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++) {
@@ -9,7 +9,6 @@ public class BookingTiketBioskop {
         }
         return result.toString();
     }
-
     static String[] usernames = {"kasir1", "kasir2"};
     static String[] passwords = {"123", "456"};
     static String[] userAdmin = {"admin"};
@@ -346,7 +345,8 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         kursiTerpilih = new String[25]; // Reset array kursiTerpilih
         indexKursiTerpilih = 0; //Reset index kursi
-    }    static void prosesPembayaran() 
+    }    
+    static void prosesPembayaran() 
     {
         System.out.println("                                                    ");
         System.out.println("|==================================================|");
@@ -800,14 +800,16 @@ public class BookingTiketBioskop {
             System.out.println("|                                                  |");
         }
         System.out.println("|_______|1|_____|2|_____|3|_____|4|_____|5|________|");
-        System.out.println("Silahkan memilih Kursi untuk Studio The Premiere: ");
+        System.out.println("|==================================================|");
+        System.out.println("| Silahkan memilih Kursi untuk Studio The Premiere:|");        
         for (int i = 0; i < jumlahTiket; i++)
         {     
-            System.out.println("Kursi ke-" + (i + 1) + ". ");
-            System.out.print("Pilih kolom Baris (A-E) dan 0 untuk cancel: ");
+            System.out.println("|--------------------------------------------------|");
+            System.out.println("|                    Kursi ke-" + (i + 1) + ". " + "                  |");
+            System.out.print("|  Pilih kolom Baris (A-E) dan 0 untuk cancel: " );
             char barisHurufInput = inputUntukPilihKursi.next().charAt(0);
             int baris = barisHurufInput - 'A' + 1;
-            System.out.print("Pilih kolom Kursi (1-5) dan 0 untuk cancel: ");
+            System.out.print("|  Pilih kolom Kursi (1-5) dan 0 untuk cancel: ");
             int kolom = inputUntukPilihKursi.nextInt();
 
             if (barisHurufInput == '0' || kolom == 0) 
