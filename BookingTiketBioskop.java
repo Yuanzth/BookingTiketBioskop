@@ -514,7 +514,8 @@ public class BookingTiketBioskop {
         System.out.println("|==============================|");
         System.out.println("|Daftar Studio yang Tersedia:  |");
         System.out.println("|==============================|");
-        for (int i = 0; i < studioWISH.length; i++) {
+        for (int i = 0; i < studioWISH.length; i++) 
+        {
         System.out.println(( "|" + i + 1) + ". " + studioWISH[i] + " (Harga: " + hrg_stdWISH[i] + ")"+ "     |");
         System.out.println("|==============================|");
         }
