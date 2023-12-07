@@ -530,7 +530,7 @@ public class BookingTiketBioskop {
         {
         studioInput--; // Mengurangi 1 karena array dimulai dari 0
         System.out.println("|==================================================|");
-        System.out.println(  "|Studio yang Anda pilih: " + studioWISH[studioInput]+"|");
+        System.out.println(  "|        Studio yang Anda pilih: " + studioWISH[studioInput]+spaces(51 - (studioWISH[studioInput].length() + 33))+"|");
         System.out.println("|==================================================|");
         } 
         else 
@@ -547,16 +547,16 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         for (int i = 0; i < studioTheMarvels.length; i++) 
         {
-        System.out.println(  "|" + (i + 1) + ". " + studioTheMarvels[i] + " (Harga: " + hrg_stdTheMarvels[i] +")      |");
+        System.out.println(  "|" + (i + 1) + ". " + studioTheMarvels[i] + " (Harga: " + hrg_stdTheMarvels[i] + spaces(51 - (studioTheMarvels[i].length() + String.valueOf(hrg_stdTheMarvels[i]).length() + 27))+"|");
         System.out.println("|==================================================|");
         }
-        System.out.print(  "|Pilih nomor studio: ");
+        System.out.print(  "|             Pilih nomor studio: ");
         studioInput = inputUntukStudio.nextInt();
         if (studioInput >= 1 && studioInput <= studioTheMarvels.length) 
         {
         studioInput--; // Mengurangi 1 karena array dimulai dari 0
         System.out.println("|==================================================|");
-        System.out.println(  "|Studio yang Anda pilih: " + studioTheMarvels[studioInput] +  "   |");
+        System.out.println(  "|        Studio yang Anda pilih: " + studioTheMarvels[studioInput] + spaces(51 - (studioTheMarvels[studioInput].length() + 33))+ "|");
         System.out.println("|==================================================|");
         } 
         else 
