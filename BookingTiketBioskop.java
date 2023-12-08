@@ -114,9 +114,11 @@ public class BookingTiketBioskop {
                     System.out.println("Program berakhir.");
                     break;
                 default:
+                    System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("       Pilihan tidak valid. Silakan pilih lagi.");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                                                    ");
                     break;
             }
         }
@@ -146,10 +148,11 @@ public class BookingTiketBioskop {
                 case 2:
                     return; // Kembali ke menu utama
                 default:
+                    System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("       Pilihan tidak valid. Silakan pilih lagi.    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-
+                    System.out.println("                                                    ");
                     break;
             }
         }
@@ -220,9 +223,12 @@ public class BookingTiketBioskop {
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
+                    System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("       Pilihan tidak valid. Silakan pilih lagi.     ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                                                    ");
+
                     break;
             }
         }
@@ -247,8 +253,12 @@ public class BookingTiketBioskop {
                 return true; // Login sukses
             }
         }
-        System.out.println("|           Login gagal, Periksa Kembali!          |");
-        System.out.println("|==================================================|");
+        System.out.println("                                                    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+        System.out.println("            Login gagal, Periksa Kembali!           ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+        System.out.println("                                                    ");
+
         return false; // Login gagal
     }
 //======================================================================================//
@@ -274,9 +284,11 @@ public class BookingTiketBioskop {
                 case 2:
                     return; // Kembali ke menu utama
                 default:
+                    System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("       Pilihan tidak valid. Silakan pilih lagi.     ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                                                    ");
                     break;
             }
         }
@@ -337,9 +349,11 @@ public class BookingTiketBioskop {
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
-                    System.out.println("|-------------------------------------------------------------------------------------|");
-                    System.out.println("|                        Pilihan tidak valid. Silakan pilih lagi.                     |");
-                    System.out.println("|-------------------------------------------------------------------------------------|");
+                    System.out.println("                                                                                       ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                         Pilihan tidak valid. Silakan pilih lagi.                      ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+                     System.out.println("                                                                                       ");
                     break;
             }
         }  
