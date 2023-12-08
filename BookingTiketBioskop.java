@@ -222,9 +222,9 @@ public class BookingTiketBioskop {
     
                 case 2:
                     System.out.println("                                                    ");
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
-                    System.out.println("|                  Logout " + loggedInUser + "                   |" );
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                   Logout " + loggedInUser + "                    " );
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("                                                    ");
                     isLoggedIn = false; // Set status login menjadi false
                     break;
@@ -349,16 +349,16 @@ public class BookingTiketBioskop {
                     break;                          
 
                 case 3:
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
-                    System.out.println("|                  Logout " + loggedInUser + "                   |" );
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                   Logout " + loggedInUser + "                    " );
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
                     System.out.println("                                                    ");
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
-                    System.out.println("|     Pilihan tidak valid. Silakan pilih lagi.     |");
-                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("      Pilihan tidak valid. Silakan pilih lagi.     ");
+                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                      System.out.println("                                                   ");
                     break;
             }
@@ -541,9 +541,11 @@ public class BookingTiketBioskop {
             } 
             else 
             {
+                System.out.println("                                                    ");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-                System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
+                System.out.println("      Nomor film yang Anda masukkan tidak valid.    ");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                System.out.println("                                                    ");
             }
         } while (jdlinput < 1 || jdlinput > jdl_film.length);
     }
@@ -568,10 +570,13 @@ public class BookingTiketBioskop {
         } 
         else 
         {
-        System.out.println("|==================================================|");
-        System.out.println("|   Nomor studio yang Anda masukkan tidak valid.   |");
-        System.out.println("|==================================================|");
-        } 
+        System.out.println("                                                    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");        
+        System.out.println("    Nomor studio yang Anda masukkan tidak valid.    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+        System.out.println("                                                    ");
+
+    } 
     }
     static void PemilihanStudioTheMarvels(){
         // Pilih Studio
@@ -594,15 +599,17 @@ public class BookingTiketBioskop {
         } 
         else 
         {
-        System.out.println("|==================================================|");
-        System.out.println("|   Nomor studio yang Anda masukkan tidak valid.   |");
-        System.out.println("|==================================================|");
+        System.out.println("                                                    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");        
+        System.out.println("    Nomor studio yang Anda masukkan tidak valid.    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+        System.out.println("                                                    ");
         }
     }
     static void PemilihanStudioNapoleon(){
         // Pilih 
         System.out.println("|==================================================|");
-        System.out.println("|          Daftar Studio yang Tersedia:            |");
+        System.out.println("|            Daftar Studio yang Tersedia:          |");
         System.out.println("|==================================================|");
         for (int i = 0; i < studioNapoleon.length; i++) 
         {
@@ -620,9 +627,11 @@ public class BookingTiketBioskop {
         } 
         else 
         {
-        System.out.println("|==================================================|");
-        System.out.println("|   Nomor studio yang Anda masukkan tidak valid.   |");
-        System.out.println("|==================================================|");
+        System.out.println("                                                    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");        
+        System.out.println("    Nomor studio yang Anda masukkan tidak valid.    ");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+        System.out.println("                                                    ");
         }
     }
     static void fillArrayWithZero(char[][] array) {
@@ -665,7 +674,7 @@ public class BookingTiketBioskop {
             {
                 System.out.println("|--------------------------------------------------|");
                 System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");
+                System.out.println("|==================================================|");           
                 isPemilihanDibatalkan = true;
                 break; // Jika pembatalan, keluar dari loop
             } 
@@ -688,8 +697,12 @@ public class BookingTiketBioskop {
             } 
             else 
             {
-                System.out.println("|--------------------------------------------------|");    
-                System.out.println("| Nomor baris/kolom tidak valid, Silahkan coba lagi|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println("                                                    ");
+
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
             }
         }
@@ -735,7 +748,7 @@ public class BookingTiketBioskop {
             {
                 System.out.println("|--------------------------------------------------|");
                 System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");  
+                System.out.println("|==================================================|");
                 isPemilihanDibatalkan = true;            
                 break; // Jika pembatalan, keluar dari loop
             } 
@@ -758,8 +771,11 @@ public class BookingTiketBioskop {
             } 
             else 
             {
-                System.out.println("|--------------------------------------------------|");    
-                System.out.println("| Nomor baris/kolom tidak valid, Silahkan coba lagi|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println("                                                    ");
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
             }
         }
@@ -827,8 +843,11 @@ public class BookingTiketBioskop {
             } 
             else 
             {
-                System.out.println("|--------------------------------------------------|");    
-                System.out.println("| Nomor baris/kolom tidak valid, Silahkan coba lagi|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println("                                                    ");
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
             }
         }
@@ -894,8 +913,11 @@ public class BookingTiketBioskop {
             } 
             else 
             {
-                System.out.println("|--------------------------------------------------|");    
-                System.out.println("| Nomor baris/kolom tidak valid, Silahkan coba lagi|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
+                System.out.println("                                                    ");
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
             }
         }
