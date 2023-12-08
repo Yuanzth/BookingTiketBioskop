@@ -271,7 +271,7 @@ public class BookingTiketBioskop {
             System.out.println("|            1. Lanjut Sebagai Admin               |");
             System.out.println("|            2. Kembali ke Menu Utama              |");
             System.out.println("|==================================================|");
-            System.out.print(  "|                  Pilih opsi: ");
+            System.out.print(  "|            Pilih opsi: ");
             int exitChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (exitChoice) {
@@ -322,14 +322,14 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = true;
 
         while (isLoggedIn) {
-            System.out.println("                                                                                      ");
-            System.out.println("|=====================================================================================|");
-            System.out.println("|                                            Menu:                                    |");
-            System.out.println("|-------------------------------------------------------------------------------------|");
-            System.out.println("| 1. Tampilkan History Transaksi Kasir                                                |");
-            System.out.println("| 2. Tampilkan History Transaksi Keseluruhan                                          |");
-            System.out.println("| 3. Logout                                                                           |");
-            System.out.println("|-------------------------------------------------------------------------------------|");
+            System.out.println("                                                    ");
+            System.out.println("|==================================================|");
+            System.out.println("|                      Menu:                       |");
+            System.out.println("|--------------------------------------------------|");
+            System.out.println("| 1. Tampilkan History Transaksi Kasir             |");
+            System.out.println("| 2. Tampilkan History Transaksi Keseluruhan       |");
+            System.out.println("| 3. Logout                                        |");
+            System.out.println("|--------------------------------------------------|");
 
             System.out.print("| Pilih opsi: ");
             int menuChoice = input.nextInt();
@@ -349,11 +349,11 @@ public class BookingTiketBioskop {
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
-                    System.out.println("                                                                                       ");
-                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-                    System.out.println("                         Pilihan tidak valid. Silakan pilih lagi.                      ");
-                    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
-                     System.out.println("                                                                                       ");
+                    System.out.println("                                                    ");
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println("|     Pilihan tidak valid. Silakan pilih lagi.     |");
+                    System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                     System.out.println("                                                   ");
                     break;
             }
         }  
@@ -364,10 +364,10 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         System.out.println("|               - Ringkasan Pemesanan -            |");
         System.out.println("|--------------------------------------------------|");
-        System.out.println(  "|            Film: " + filmTerpilih + "       ");
-        System.out.println(  "|            Studio: " + getStudioTerpilih() + "      ");
-        System.out.println(  "|            Jumlah Tiket: " + jumlahTiket);
-        System.out.println("|            Pilihan Kursi: ");
+        System.out.println("|                Film: " + filmTerpilih + spaces(50 - (String.valueOf(filmTerpilih).length() + 22)) + "|");
+        System.out.println("|                Studio: " + getStudioTerpilih() + spaces(50 - (getStudioTerpilih().length() + 24)) + "|");
+        System.out.println("|                Jumlah Tiket: " + jumlahTiket + spaces(50 - (String.valueOf(jumlahTiket).length() + 30)) + "|");
+        System.out.println("|                Pilihan Kursi:                    |");
         for (int i = 0; i < indexKursiTerpilih; i++)
         {
             System.out.println(kursiTerpilih[i]);
@@ -512,28 +512,29 @@ public class BookingTiketBioskop {
             return "";
         }
     }
-    static void PemilihanFILM(){
+    static void PemilihanFILM() {
         // Pilih Film
         System.out.println("|==================================================|");
         System.out.println("|              Daftar Film yang Tersedia:          |");
         System.out.println("|==================================================|");
-        for (int i = 0; i < jdl_film.length; i++) 
-        {
+        for (int i = 0; i < jdl_film.length; i++) {
             System.out.println("|              " + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 18)) + "|");
         }
         System.out.println("|==================================================|");
-        System.out.print(  "|   Pilih nomor film yang ingin Anda tonton: ");
-        jdlinput = inputUntukJdlFilm.nextInt();
-        if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
-        jdlinput--; // Mengurangi 1 karena array dimulai dari 0
-        System.out.println("|    Film yang Anda pilih: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 27))+"|");
-        } 
-        else 
-        {
-        System.out.println("|==================================================|");
-        System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
-        System.out.println("|==================================================|");
-        }       
+        do {
+            System.out.print("|   Pilih nomor film yang ingin Anda tonton: ");
+            jdlinput = inputUntukJdlFilm.nextInt();
+
+            if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
+                jdlinput--; // Mengurangi 1 karena array dimulai dari 0
+                System.out.println("|    Film yang Anda pilih: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 27)) + "|");
+                return;
+            } else {
+                System.out.println("|==================================================|");
+                System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
+                System.out.println("|==================================================|");
+            }
+        } while (jdlinput < 1 || jdlinput > jdl_film.length);
     }
 
     static void PemilihanStudioWish(){
