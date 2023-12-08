@@ -48,7 +48,11 @@ public class BookingTiketBioskop {
         }
         else if (jumlahTiket <= 0)
         {
-            System.out.println("Jumlah tiket tidak valid.");
+            System.out.println("                                                    ");
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+            System.out.println("               Jumlah tiket tidak valid.");
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+            System.out.println("                                                    ");
             PemilihanJumlahTiket();
         }
         else 
@@ -217,9 +221,11 @@ public class BookingTiketBioskop {
                     break;
     
                 case 2:
+                    System.out.println("                                                    ");
                     System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
                     System.out.println("|                  Logout " + loggedInUser + "                   |" );
                     System.out.println("|>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<|");
+                    System.out.println("                                                    ");
                     isLoggedIn = false; // Set status login menjadi false
                     break;
                 default:
@@ -425,9 +431,12 @@ public class BookingTiketBioskop {
         } 
         else 
         {
-            System.out.println("|==================================================|");
-            System.out.println("|          Metode pembayaran tidak valid.          |");
-            System.out.println("|==================================================|");
+            System.out.println("                                                    ");
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+            System.out.println("           Metode pembayaran tidak valid.           ");
+            System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+            System.out.println("                                                    ");
+
         }
     }
     static void tampilkanHistoryTransaksi() {
@@ -529,10 +538,12 @@ public class BookingTiketBioskop {
                 jdlinput--; // Mengurangi 1 karena array dimulai dari 0
                 System.out.println("|    Film yang Anda pilih: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 27)) + "|");
                 return;
-            } else {
-                System.out.println("|==================================================|");
+            } 
+            else 
+            {
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                 System.out.println("|     Nomor film yang Anda masukkan tidak valid.   |");
-                System.out.println("|==================================================|");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             }
         } while (jdlinput < 1 || jdlinput > jdl_film.length);
     }
