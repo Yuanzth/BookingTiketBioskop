@@ -359,7 +359,7 @@ public class BookingTiketBioskop {
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("      Pilihan tidak valid. Silakan pilih lagi.     ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-                     System.out.println("                                                   ");
+                    System.out.println("                                                   ");
                     break;
             }
         }  
@@ -672,9 +672,11 @@ public class BookingTiketBioskop {
 
             if (barisHurufInput == '0' || kolom == 0) 
             {
-                System.out.println("|--------------------------------------------------|");
-                System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");           
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                System.out.println("             Pemilihan kursi dibatalkan.            ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");   
+                System.out.println("                                                    ");        
                 isPemilihanDibatalkan = true;
                 break; // Jika pembatalan, keluar dari loop
             } 
@@ -746,9 +748,11 @@ public class BookingTiketBioskop {
 
             if (barisHurufInput == '0' || kolom == 0) 
             {
-                System.out.println("|--------------------------------------------------|");
-                System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                System.out.println("             Pemilihan kursi dibatalkan.            ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");   
+                System.out.println("                                                    ");
                 isPemilihanDibatalkan = true;            
                 break; // Jika pembatalan, keluar dari loop
             } 
@@ -818,9 +822,11 @@ public class BookingTiketBioskop {
 
             if (barisHurufInput == '0' || kolom == 0) 
             {
-                System.out.println("|--------------------------------------------------|");
-                System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");   
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                System.out.println("             Pemilihan kursi dibatalkan.            ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");   
+                System.out.println("                                                    ");
                 isPemilihanDibatalkan = true;             
                 break; // Jika pembatalan, keluar dari loop
             } 
@@ -888,9 +894,11 @@ public class BookingTiketBioskop {
 
             if (barisHurufInput == '0' || kolom == 0) 
             {
-                System.out.println("|--------------------------------------------------|");
-                System.out.println("|            Pemilihan kursi dibatalkan.           |");
-                System.out.println("|==================================================|");
+                System.out.println("                                                    ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                System.out.println("             Pemilihan kursi dibatalkan.            ");
+                System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");   
+                System.out.println("                                                    ");
                 isPemilihanDibatalkan = true;                
                 break; // Jika pembatalan, keluar dari loop
             } 
