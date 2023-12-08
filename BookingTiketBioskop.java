@@ -529,8 +529,8 @@ public class BookingTiketBioskop {
         for (int i = 0; i < jdl_film.length; i++) {
             System.out.println("|              " + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 18)) + "|");
         }
-        System.out.println("|==================================================|");
         do {
+            System.out.println("|==================================================|");
             System.out.print("|   Pilih nomor film yang ingin Anda tonton: ");
             jdlinput = inputUntukJdlFilm.nextInt();
 
