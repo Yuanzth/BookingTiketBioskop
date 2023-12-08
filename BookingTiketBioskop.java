@@ -41,9 +41,10 @@ public class BookingTiketBioskop {
     
         System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
 
-        jumlahTiket = inputUntukJdlFilm.nextInt();
+        jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
             System.out.println("Kursi di dalam studio hanya berjumlah 25");
+            PemilihanJumlahTiket();
         }
         else if (jumlahTiket <= 0)
         {
@@ -527,7 +528,7 @@ public class BookingTiketBioskop {
         System.out.println("|            Daftar Studio yang Tersedia:          |");
         System.out.println("|==================================================|");
         for (int i = 0; i < studioWISH.length; i++) {
-        System.out.println("|" + (i + 1) + ". " + studioWISH[i] + " (Harga: " + hrg_stdWISH[i] + ")"+ "     |");
+        System.out.println(  "|             " + (i + 1) + ". " + studioWISH[i] + " (Harga: " + hrg_stdWISH[i]+")" + spaces(51 - (studioWISH[i].length() + String.valueOf(hrg_stdWISH[i]).length() + 27))+"|");
         System.out.println("|==================================================|");
         }
         System.out.print(  "|Pilih nomor studio: ");
@@ -553,7 +554,7 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         for (int i = 0; i < studioTheMarvels.length; i++) 
         {
-        System.out.println(  "|" + (i + 1) + ". " + studioTheMarvels[i] + " (Harga: " + hrg_stdTheMarvels[i] + spaces(51 - (studioTheMarvels[i].length() + String.valueOf(hrg_stdTheMarvels[i]).length() + 27))+"|");
+        System.out.println(  "|             " + (i + 1) + ". " + studioTheMarvels[i] + " (Harga: " + hrg_stdTheMarvels[i]+")" + spaces(51 - (studioTheMarvels[i].length() + String.valueOf(hrg_stdTheMarvels[i]).length() + 27))+"|");
         System.out.println("|==================================================|");
         }
         System.out.print(  "|             Pilih nomor studio: ");
@@ -579,7 +580,7 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         for (int i = 0; i < studioNapoleon.length; i++) 
         {
-        System.out.println(( "|"+(i + 1) + ". " + studioNapoleon[i] + " (Harga: " + hrg_stdNapoleon[i])+" |");
+        System.out.println(  "|             " + (i + 1) + ". " + studioNapoleon[i] + " (Harga: " + hrg_stdNapoleon[i]+")" + spaces(51 - (studioNapoleon[i].length() + String.valueOf(hrg_stdWISH[i]).length() + 27))+"|");
         System.out.println("|==================================================|");
         }
         System.out.print("|Pilih nomor studio: ");
@@ -588,7 +589,7 @@ public class BookingTiketBioskop {
         {
         studioInput--; // Mengurangi 1 karena array dimulai dari 0
         System.out.println("|==================================================|");
-        System.out.println(  "|Studio yang Anda pilih: " + studioNapoleon[studioInput]+"|");
+        System.out.println(  "|        Studio yang Anda pilih: " + studioNapoleon[studioInput] + spaces(51 - (studioNapoleon[studioInput].length() + 33))+ "|");
         System.out.println("|==================================================|");
         } 
         else 
