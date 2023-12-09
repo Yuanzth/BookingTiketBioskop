@@ -127,7 +127,6 @@ public class BookingTiketBioskop {
             }
         }
     }
-
 //=======================================================================================================//
     static void loginKasir() {
         boolean isLoggedIn = false;
