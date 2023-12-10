@@ -93,7 +93,6 @@ public class BookingTiketBioskop {
         fillArrayWithZero(StudioThePremiereNapoleon);
 
         boolean programRunning = true;
-
         while (programRunning) {
             System.out.println("|==================================================|");
             System.out.println("|                    Menu Utama                    |");
@@ -132,7 +131,6 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            
             System.out.println("|          Pilih opsi untuk melanjutkan!           |");
             System.out.println("|==================================================|");
             System.out.println("|            1. Lanjut Sebagai Kasir               |");
