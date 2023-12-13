@@ -132,7 +132,7 @@ public class BookingTiketBioskop {
                     break;
                 case 3:
                     PilihLanguage = false;
-                    System.out.println("Program berakhir.");
+                    System.out.println("Program berakhir.|Program ended.");
                     break;
                 default:
                     System.out.println("                                                    ");
@@ -153,9 +153,9 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
             System.out.println("|                    Menu Utama                    |");
             System.out.println("|==================================================|");
-            System.out.println("|             1. Login sebagai Kasir               |");
-            System.out.println("|             2. Login sebagai Admin               |");
-            System.out.println("|             3. Exit                              |");
+            System.out.println("|          1. Login sebagai Kasir                  |");
+            System.out.println("|          2. Login sebagai Admin                  |");
+            System.out.println("|          3. Kembali ke pemilihan bahasa          |");
             System.out.println("|==================================================|");
 
             System.out.print(  "|                   Pilih opsi: ");
@@ -170,7 +170,6 @@ public class BookingTiketBioskop {
                     break;
                 case 3:
                     programRunning = false;
-                    System.out.println("Program berakhir.");
                     break;
                 default:
                     System.out.println("                                                    ");
@@ -978,9 +977,9 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
             System.out.println("|                     Main Menu                    |");
             System.out.println("|==================================================|");
-            System.out.println("|                1. Login as Cashier               |");
-            System.out.println("|                2. Login as Admin                 |");
-            System.out.println("|                3. Back to Language Selection     |");
+            System.out.println("|            1. Login as Cashier                   |");
+            System.out.println("|            2. Login as Admin                     |");
+            System.out.println("|            3. Back to Language Selection         |");
             System.out.println("|==================================================|");
 
             System.out.print(  "|                   Select Option: ");
@@ -995,7 +994,6 @@ public class BookingTiketBioskop {
                     break;
                 case 3:
                     programRunning = false;
-                    System.out.println("End Program.");
                     break;
                 default:
                     System.out.println("                                                    ");
