@@ -1016,7 +1016,7 @@ public class BookingTiketBioskop {
             System.out.println("|            1. Continue as Cashier                |");
             System.out.println("|            2. Back to Main Menu                  |");
             System.out.println("|==================================================|");
-            System.out.print(  "|                   Pilih opsi: ");
+            System.out.print(  "|                   Select Option: ");
             int exitChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (exitChoice) {
@@ -1031,8 +1031,9 @@ public class BookingTiketBioskop {
                 default:
                     System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.    ");
+                    System.out.println("         Invalid choice. Please try again.          ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
+                    System.out.println("                                                    ");
                     System.out.println("                                                    ");
                     break;
             }
@@ -1042,13 +1043,13 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = true; // Tambahkan variabel untuk status login
     
         while (isLoggedIn) {
-            System.out.println("|                     Menu Kasir                   |");
+            System.out.println("|                    Cashier Menu                  |");
             System.out.println("|==================================================|");
-            System.out.println("|                 1. Pemesanan Tiket               |");
-            System.out.println("|                 2. Logout                        |");
+            System.out.println("|                  1. Order Ticket                 |");
+            System.out.println("|                  2. Logout                       |");
             System.out.println("|==================================================|");
     
-            System.out.print(  "|                    Pilih opsi: ");
+            System.out.print(  "|                  Select Option: ");
             int menuChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuChoice) {
@@ -1750,7 +1751,7 @@ public class BookingTiketBioskop {
                 else 
                 {
                     System.out.println("|--------------------------------------------------|");
-                    System.out.println("|      The seat is taken, please pick another      |");
+                    System.out.println("|Kursi sudah terisi, silahkan pilih kursi yang lain|");
                     i--; // Mengulang input untuk kursi yang sudah terisi
                 }
             } 
@@ -1758,7 +1759,7 @@ public class BookingTiketBioskop {
             {
                 System.out.println("                                                    ");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
-                System.out.println("The row/column number is not valid. Please try again");
+                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
                 System.out.println("                                                    ");
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
@@ -1766,7 +1767,7 @@ public class BookingTiketBioskop {
         }
         if (!isPemilihanDibatalkan) {
             System.out.println("|==================================================|");
-            System.out.println("|                 Your seat choices:               |");
+            System.out.println("|                Pilihan kursi Anda:               |");
             for (int i = 0; i < indexKursiTerpilih; i++) {
                 System.out.println(kursiTerpilih[i]);
             }
@@ -1774,18 +1775,18 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Enter the number of tickets you want to reserve: ");
+        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
-            System.out.println("The chairs in the studio are only 25 in number");
+            System.out.println("Kursi di dalam studio hanya berjumlah 25");
             PemilihanJumlahTiket();
         }
         else if (jumlahTiket <= 0)
         {
             System.out.println("                                                    ");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println("The row/column number is not valid. Please try again");
+            System.out.println("               Jumlah tiket tidak valid.");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             System.out.println("                                                    ");
             PemilihanJumlahTiket();
