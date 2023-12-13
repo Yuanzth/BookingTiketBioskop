@@ -1774,18 +1774,18 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
+        System.out.print("    Enter the number of tickets you want to reserve: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
-            System.out.println("Kursi di dalam studio hanya berjumlah 25");
+            System.out.println("The chairs in the studio are only 25 in number");
             PemilihanJumlahTiket();
         }
         else if (jumlahTiket <= 0)
         {
             System.out.println("                                                    ");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println("               Jumlah tiket tidak valid.");
+            System.out.println("The row/column number is not valid. Please try again");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             System.out.println("                                                    ");
             PemilihanJumlahTiket();
