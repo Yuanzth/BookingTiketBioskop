@@ -117,10 +117,10 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
             System.out.println("|             1. Indonesia                         |");
             System.out.println("|             2. English                           |");
-            System.out.println("|             3. Exit                              |");
+            System.out.println("|             3. Exit Program                      |");
             System.out.println("|==================================================|");
 
-            System.out.print(  "|                   Pilih opsi: ");
+            System.out.print(  "|             Select option: ");
             int menuUtamaChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuUtamaChoice) {
@@ -132,7 +132,7 @@ public class BookingTiketBioskop {
                     break;
                 case 3:
                     PilihLanguage = false;
-                    System.out.println("Program berakhir.");
+                    System.out.println("End of Program.");
                     break;
                 default:
                     System.out.println("                                                    ");
@@ -978,9 +978,9 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
             System.out.println("|                     Main Menu                    |");
             System.out.println("|==================================================|");
-            System.out.println("|                1. Login as Cashier               |");
-            System.out.println("|                2. Login as Admin                 |");
-            System.out.println("|                3. Back to Language Selection     |");
+            System.out.println("|             1. Login as Cashier                  |");
+            System.out.println("|             2. Login as Admin                    |");
+            System.out.println("|             3. Back to Language Selection        |");
             System.out.println("|==================================================|");
 
             System.out.print(  "|                   Pilih opsi: ");
