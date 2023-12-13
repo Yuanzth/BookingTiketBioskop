@@ -983,7 +983,7 @@ public class BookingTiketBioskop {
             System.out.println("|             3. Back to Language Selection        |");
             System.out.println("|==================================================|");
 
-            System.out.print(  "|                   Pilih opsi: ");
+            System.out.print(  "|                   Select opsion: ");
             int menuUtamaChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuUtamaChoice) {
@@ -1774,18 +1774,18 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
+        System.out.print("    Enter the number of tickets you want to reserve: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
-            System.out.println("Kursi di dalam studio hanya berjumlah 25");
-            PemilihanJumlahTiket();
+            System.out.println("The chairs in the studio amount to only 25");
+            PemilihanJumlahTiketEng();
         }
         else if (jumlahTiket <= 0)
         {
             System.out.println("                                                    ");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println("               Jumlah tiket tidak valid.");
+            System.out.println("              Invalid ticket quantity.              ");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             System.out.println("                                                    ");
             PemilihanJumlahTiket();
