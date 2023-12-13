@@ -983,7 +983,7 @@ public class BookingTiketBioskop {
             System.out.println("|                3. Back to Language Selection     |");
             System.out.println("|==================================================|");
 
-            System.out.print(  "|                   Select opsion: ");
+            System.out.print(  "|                   Select Option: ");
             int menuUtamaChoice = input.nextInt();
             System.out.println("|==================================================|");
             switch (menuUtamaChoice) {
@@ -995,12 +995,12 @@ public class BookingTiketBioskop {
                     break;
                 case 3:
                     programRunning = false;
-                    System.out.println("Program berakhir.");
+                    System.out.println("End Program.");
                     break;
                 default:
                     System.out.println("                                                    ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-                    System.out.println("       Pilihan tidak valid. Silakan pilih lagi.");
+                    System.out.println("         Invalid choice. Please try again.          ");
                     System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
                     System.out.println("                                                    ");
                     break;
@@ -1011,10 +1011,10 @@ public class BookingTiketBioskop {
         boolean isLoggedIn = false;
 
         while (!isLoggedIn) {
-            System.out.println("|          Pilih opsi untuk melanjutkan!           |");
+            System.out.println("|         - Select an option to continue -         |");
             System.out.println("|==================================================|");
-            System.out.println("|            1. Lanjut Sebagai Kasir               |");
-            System.out.println("|            2. Kembali ke Menu Utama              |");
+            System.out.println("|            1. Continue as Cashier                |");
+            System.out.println("|            2. Back to Main Menu                  |");
             System.out.println("|==================================================|");
             System.out.print(  "|                   Pilih opsi: ");
             int exitChoice = input.nextInt();
@@ -1774,18 +1774,18 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Enter the number of tickets you want to reserve: ");
+        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
-            System.out.println("The chairs in the studio amount to only 25");
-            PemilihanJumlahTiketEng();
+            System.out.println("Kursi di dalam studio hanya berjumlah 25");
+            PemilihanJumlahTiket();
         }
         else if (jumlahTiket <= 0)
         {
             System.out.println("                                                    ");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
-            System.out.println("              Invalid ticket quantity.              ");
+            System.out.println("               Jumlah tiket tidak valid.");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             System.out.println("                                                    ");
             PemilihanJumlahTiket();
