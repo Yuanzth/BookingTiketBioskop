@@ -39,6 +39,24 @@ public class test {
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
             }
         }
+        //===================//        
+        Inisialisasi;
+        while(kondisi){
+            Statement;
+            update
+        }
+        //====================//
+        for (Inisialisasi;kondisi;update){
+
+        }
+        //====================//
+        Inisialisasi;
+        do{
+            Statement;
+            update
+        }while(kondisi)
+        //====================//
+
     }
 
     public static void bookTicket(int[][] dailyReport, String[] filmNames, String[] studioNames, int[] studioPrices) {
@@ -114,4 +132,5 @@ public class test {
             }
         }
     }
+    
 }

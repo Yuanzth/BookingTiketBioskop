@@ -1368,7 +1368,7 @@ public class BookingTiketBioskop {
     static void PemilihanFILMEng() {
         // Pilih Film
         System.out.println("|==================================================|");
-        System.out.println("|                Available Movie list:             |");
+        System.out.println("|                Available Movie List:             |");
         System.out.println("|==================================================|");
         for (int i = 0; i < jdl_film.length; i++) {
             System.out.println("|              " + (i + 1) + ". " + jdl_film[i] + spaces(51 - (jdl_film[i].length() + 18)) + "|");
@@ -1781,7 +1781,7 @@ public class BookingTiketBioskop {
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
             System.out.println("The chairs in the studio are only 25 in number");
-            PemilihanJumlahTiket();
+            PemilihanJumlahTiketEng();
         }
         else if (jumlahTiket <= 0)
         {
@@ -1790,7 +1790,7 @@ public class BookingTiketBioskop {
             System.out.println("The row/column number is not valid. Please try again");
             System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");
             System.out.println("                                                    ");
-            PemilihanJumlahTiket();
+            PemilihanJumlahTiketEng();
         }
         else 
         {}
