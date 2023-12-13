@@ -1750,7 +1750,7 @@ public class BookingTiketBioskop {
                 else 
                 {
                     System.out.println("|--------------------------------------------------|");
-                    System.out.println("|Kursi sudah terisi, silahkan pilih kursi yang lain|");
+                    System.out.println("|      The seat is taken, please pick another      |");
                     i--; // Mengulang input untuk kursi yang sudah terisi
                 }
             } 
@@ -1758,7 +1758,7 @@ public class BookingTiketBioskop {
             {
                 System.out.println("                                                    ");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
-                System.out.println(" Nomor baris/kolom tidak valid, Silahkan coba lagi  ");
+                System.out.println("The row/column number is not valid. Please try again");
                 System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<");                
                 System.out.println("                                                    ");
                 i--; // Mengulang input untuk nomor baris atau kolom yang tidak valid
@@ -1766,7 +1766,7 @@ public class BookingTiketBioskop {
         }
         if (!isPemilihanDibatalkan) {
             System.out.println("|==================================================|");
-            System.out.println("|                Pilihan kursi Anda:               |");
+            System.out.println("|                 Your seat choices:               |");
             for (int i = 0; i < indexKursiTerpilih; i++) {
                 System.out.println(kursiTerpilih[i]);
             }
