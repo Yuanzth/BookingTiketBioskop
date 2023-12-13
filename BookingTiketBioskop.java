@@ -980,7 +980,7 @@ public class BookingTiketBioskop {
             System.out.println("|==================================================|");
             System.out.println("|                1. Login as Cashier               |");
             System.out.println("|                2. Login as Admin                 |");
-            System.out.println("|                3. Exit                           |");
+            System.out.println("|                3. Back to Language Selection     |");
             System.out.println("|==================================================|");
 
             System.out.print(  "|                   Pilih opsi: ");
