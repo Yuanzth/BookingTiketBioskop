@@ -1774,7 +1774,7 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Enter the number of tickets you want to reserve: ");
+        System.out.print("    Masukkan jumlah tiket yang ingin dipesan: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
