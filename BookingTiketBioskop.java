@@ -1209,10 +1209,10 @@ public class BookingTiketBioskop {
         while (isLoggedIn) {
             System.out.println("                                                    ");
             System.out.println("|==================================================|");
-            System.out.println("|                      Menu:                       |");
+            System.out.println("|             Menu Transaction History:            |");
             System.out.println("|--------------------------------------------------|");
             System.out.println("| 1. Show Cashier Transaction History              |"); 
-            System.out.println("| 2. Show History Transaksi Keseluruhan            |");
+            System.out.println("| 2. Show Summary                                  |");
             System.out.println("| 3. Logout                                        |");
             System.out.println("|--------------------------------------------------|");
 
@@ -1327,9 +1327,9 @@ public class BookingTiketBioskop {
     
         for (int i = 0; i < indexHistoryKasir1; i++) {
             System.out.println("| > Transaction " + (i + 1) + ": Total Ticket = " + historyJumlahTiketKasir1[i] +
-                    spaces(51 - (String.valueOf(historyJumlahTiketKasir1[i]).length()+32)) + "|");
-            System.out.println("|                Revenue = " + historyPendapatanKasir1[i] +
-                    spaces(51 - (String.valueOf(historyPendapatanKasir1[i]).length()+30)) + "|");
+                    spaces(51 - (String.valueOf(historyJumlahTiketKasir1[i]).length()+34)) + "|");
+            System.out.println("|   Revenue = " + historyPendapatanKasir1[i] +
+                    spaces(51 - (String.valueOf(historyPendapatanKasir1[i]).length()+27)) + "|");
             System.out.println("|" + spaces(50) + "|");
         }
         System.out.println("|--------------------------------------------------|");
