@@ -1131,7 +1131,7 @@ public class BookingTiketBioskop {
         for (int i = 0; i < usernames.length; i++) {
             if (usernames[i].equals(username) && passwords[i].equals(password)) {
                 loggedInUser = username; // Set pengguna yang sedang login
-                System.out.println("|             Hello There, " + loggedInUser + "!              |");
+                System.out.println(  "|                Hello There, " + loggedInUser + "!              |");
                 System.out.println("|==================================================|");
                 return true; // Login sukses
             }
@@ -1267,7 +1267,7 @@ public class BookingTiketBioskop {
         System.out.println("|==================================================|");
         System.out.println("|                    - Payment -                   |");
         System.out.println("|--------------------------------------------------|");
-        System.out.println(  "|            Total Payment : " + hitungTotalHarga());
+        System.out.println(  "|             Total Payment : " + hitungTotalHarga());
         if (loggedInUser.equals("kasir1")) {
             historyJumlahTiketKasir1[indexHistoryKasir1] = jumlahTiket;
             historyPendapatanKasir1[indexHistoryKasir1] = hitungTotalHarga();
@@ -1380,7 +1380,7 @@ public class BookingTiketBioskop {
 
             if (jdlinput >= 1 && jdlinput <= jdl_film.length) {
                 jdlinput--; // Mengurangi 1 karena array dimulai dari 0
-                System.out.println("|    The movie you selected: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 27)) + "|");
+                System.out.println("|   The movie you selected: " + jdl_film[jdlinput] + spaces(51 - (jdl_film[jdlinput].length() + 28)) + "|");
                 return;
             } 
             else 
@@ -1403,13 +1403,13 @@ public class BookingTiketBioskop {
         System.out.println(  "|             " + (i + 1) + ". " + studioWISH[i] + " (Price: " + hrg_stdWISH[i]+")" + spaces(51 - (studioWISH[i].length() + String.valueOf(hrg_stdWISH[i]).length() + 27))+"|");
         System.out.println("|==================================================|");
         }
-        System.out.print(  "|Choose the studio number: ");
+        System.out.print(  "| Choose the studio number: ");
         studioInput = inputUntukStudio.nextInt();
         if (studioInput >= 1 && studioInput <= studioWISH.length) 
         {
         studioInput--; // Mengurangi 1 karena array dimulai dari 0
         System.out.println("|==================================================|");
-        System.out.println(  "|        The studio your selected: " + studioWISH[studioInput]+spaces(51 - (studioWISH[studioInput].length() + 33))+"|");
+        System.out.println(  "|        The studio your selected: " + studioWISH[studioInput]+spaces(51 - (studioWISH[studioInput].length() + 35))+"|");
         System.out.println("|==================================================|");
         } 
         else 
@@ -1495,11 +1495,11 @@ public class BookingTiketBioskop {
         }
         System.out.println("|_______|1|_____|2|_____|3|_____|4|_____|5|________|");
         System.out.println("|==================================================|");
-        System.out.println("|    Please choose seats for the Deluxe Studio:   |");
+        System.out.println("|    Please choose seats for the Deluxe Studio:    |");
         for (int i = 0; i < jumlahTiket; i++)
         {     
             System.out.println("|--------------------------------------------------|");
-            System.out.println("|                    Seat number-" + (i + 1) + ". " + "                  |");
+            System.out.println("|                   Seat number-" + (i + 1) + ". " + "                |");
             System.out.println("|--------------------------------------------------|");
             System.out.print("|   Choose row column (A-E) and 0 to cancel: " );
             char barisHurufInput = inputUntukPilihKursi.next().charAt(0);
@@ -1575,7 +1575,7 @@ public class BookingTiketBioskop {
         for (int i = 0; i < jumlahTiket; i++)
         {     
             System.out.println("|--------------------------------------------------|");
-            System.out.println("|                   Seat number-" + (i + 1) + ". " + "                  |");
+            System.out.println("|                 Seat number-" + (i + 1) + ". " + "              |");
             System.out.println("|--------------------------------------------------|");
             System.out.print("|  Choose row column (A-E) and 0 to cancel:   " );
             char barisHurufInput = inputUntukPilihKursi.next().charAt(0);
@@ -1722,7 +1722,7 @@ public class BookingTiketBioskop {
         for (int i = 0; i < jumlahTiket; i++)
         {     
             System.out.println("|--------------------------------------------------|");
-            System.out.println("|                  Seat number-" + (i + 1) + ". " + "                  |");
+            System.out.println("|                  Seat number-" + (i + 1) + ". " + "               |");
             System.out.print("|  Choose row column (A-E) and 0 to cancel: " );
             char barisHurufInput = inputUntukPilihKursi.next().charAt(0);
             int baris = barisHurufInput - 'A' + 1;
@@ -1776,7 +1776,7 @@ public class BookingTiketBioskop {
     }
     static void PemilihanJumlahTiketEng() {
     
-        System.out.print("    Enter the number of tickets you'd like to order: ");
+        System.out.print("| Enter the number of tickets you'd like to order: ");
 
         jumlahTiket = inputUntukPilihKursi.nextInt();
         if (jumlahTiket > 25) {
